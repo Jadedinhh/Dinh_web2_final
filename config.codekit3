@@ -17,61 +17,61 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
-    "\/dev\/content\/attractions" : {
+    "\/dev\/content\/attractions.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/attractions",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/cuisine" : {
+    "\/dev\/content\/cuisine.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/cuisine",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/Glance" : {
+    "\/dev\/content\/glance.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/Glance",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/Hero-1" : {
+    "\/dev\/content\/hero.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/Hero-1",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/human" : {
+    "\/dev\/content\/human.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/human",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/quote" : {
+    "\/dev\/content\/quote.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/quote",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
-    "\/dev\/content\/tips" : {
+    "\/dev\/content\/tips.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/tips",
-      "oF" : 0
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
