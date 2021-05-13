@@ -378,3 +378,17 @@ ul li {
 /* =============
     Navigation
 ============= */
+/* =============
+    Header
+============= */
+header {
+  display: grid;
+}
+header img {
+  width: 100%;
+  background-color: none;
+}
+
+/* =============
+    Footer
+============= */
