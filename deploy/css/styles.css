@@ -397,3 +397,11 @@ ul li {
 /* =============
     Footer
 ============= */
+#hero #hero-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-content .";
+}
+#hero #hero-content > div {
+  grid-area: hero-content;
+}
