@@ -405,3 +405,12 @@ ul li {
 #hero #hero-content > div {
   grid-area: hero-content;
 }
+
+#glance #glance-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". glance-content .";
+}
+#glance #glance-content > div {
+  grid-area: glance-content;
+}
