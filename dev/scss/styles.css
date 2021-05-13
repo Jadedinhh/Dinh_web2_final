@@ -368,6 +368,13 @@ img {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+}
+header img {
+  width: 100%;
+}
+
 /* =============
     Footer
 ============= */
