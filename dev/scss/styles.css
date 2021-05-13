@@ -356,6 +356,19 @@ img {
 /* =============
     Typography
 ============= */
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Buttons
 ============= */
@@ -364,17 +377,4 @@ img {
 ============= */
 /* =============
     Navigation
-============= */
-/* =============
-    Header
-============= */
-header {
-  display: grid;
-}
-header img {
-  width: 100%;
-}
-
-/* =============
-    Footer
 ============= */
