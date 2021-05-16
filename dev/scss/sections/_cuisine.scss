@@ -19,6 +19,15 @@
                     text-align: center;
                 }
 
+                img{
+                    display: none;
+                }
+                @include md{
+                    img{
+                        display: list-item;
+                    }
+                }
+
             }
 
             .dishes{

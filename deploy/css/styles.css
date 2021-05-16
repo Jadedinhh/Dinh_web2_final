@@ -400,6 +400,7 @@ ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: #EAE2B7;
 }
 #footer > div {
   grid-area: footer;
@@ -429,6 +430,9 @@ ul li {
   grid-area: glance-content;
 }
 
+#attractions > div {
+  background-color: #C7D1D6;
+}
 #attractions > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -454,6 +458,14 @@ ul li {
 }
 #cuisine > div ul #cuisine-intro h1 {
   text-align: center;
+}
+#cuisine > div ul #cuisine-intro img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cuisine > div ul #cuisine-intro img {
+    display: list-item;
+  }
 }
 #cuisine > div ul .dishes p {
   display: none;
