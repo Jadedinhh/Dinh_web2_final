@@ -1,6 +1,19 @@
 #glance{
+>div{
 
-    #glance-content{
+    .guide{
+       
+        background-color: $prussian;
+        height: 8px;
+        width: 60%;
+        margin-top: 5px;
+        
+        >div{
+            background-position: center;
+        }
+    }
+
+     #glance-content{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". glance-content .";
@@ -17,4 +30,6 @@
             grid-area: glance-content;
         }
     }
+}
+   
 }

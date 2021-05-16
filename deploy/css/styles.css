@@ -415,18 +415,27 @@ ul li {
   grid-area: hero-content;
 }
 
-#glance #glance-content {
+#glance > div .guide {
+  background-color: #003049;
+  height: 8px;
+  width: 60%;
+  margin-top: 5px;
+}
+#glance > div .guide > div {
+  background-position: center;
+}
+#glance > div #glance-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". glance-content .";
 }
-#glance #glance-content p2 {
+#glance > div #glance-content p2 {
   display: none;
 }
-#glance #glance-content p3 {
+#glance > div #glance-content p3 {
   display: none;
 }
-#glance #glance-content > div {
+#glance > div #glance-content > div {
   grid-area: glance-content;
 }
 
@@ -521,4 +530,13 @@ ul li {
 }
 #human > div aside > div ul #h5 {
   display: none;
+}
+#human > div .guide {
+  background-color: #003049;
+  height: 8px;
+  width: 60%;
+  margin-top: 5px;
+}
+#human > div .guide > div {
+  background-position: center;
 }
