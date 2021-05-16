@@ -411,6 +411,12 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". glance-content .";
 }
+#glance #glance-content p2 {
+  display: none;
+}
+#glance #glance-content p3 {
+  display: none;
+}
 #glance #glance-content > div {
   grid-area: glance-content;
 }

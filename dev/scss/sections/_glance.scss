@@ -5,6 +5,14 @@
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". glance-content .";
 
+        p2{
+            display: none;
+        }
+
+        p3{
+            display: none;
+        }
+
         >div{
             grid-area: glance-content;
         }
