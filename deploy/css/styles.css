@@ -414,3 +414,18 @@ ul li {
 #glance #glance-content > div {
   grid-area: glance-content;
 }
+
+#attractions > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". attractions-content .";
+}
+#attractions > div ul li section > div {
+  grid-area: attractions-content;
+}
+#attractions > div #attractions-intro h1 {
+  text-align: center;
+}
+#attractions > div #attractions-intro p {
+  display: none;
+}

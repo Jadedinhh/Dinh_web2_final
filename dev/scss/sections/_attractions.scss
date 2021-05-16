@@ -1,0 +1,29 @@
+#attractions{
+
+    >div{
+        
+        ul{
+            li{
+                 section{
+                     display: grid;
+                     grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". attractions-content .";
+
+                    >div{
+                        grid-area: attractions-content;
+                    }
+                 }
+            }
+        }
+
+        #attractions-intro{
+            h1{
+                text-align: center;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
