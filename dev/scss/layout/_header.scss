@@ -1,3 +1,10 @@
-/* =============
-    Header
-============= */
+#header{
+    ul{
+       
+        li{
+           display: flex;
+           space-between:abs($number: 2px)
+
+        }
+    }
+}
