@@ -1,0 +1,50 @@
+#human{
+    >div{
+        h1{
+            text-align: center;
+        }
+        article{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". human-content .";
+
+            p2{
+                display: none;
+            }
+
+            >div{
+                grid-area: human-content;
+            }
+        }
+
+        aside{
+            >div{
+                ul{
+                    li{
+
+                    }
+
+                    #h1{
+
+                    }
+
+                    #h2{
+                        display: none;
+                    }
+
+                    #h3{
+                        display: none;
+                    }
+
+                    #h4{
+                        display: none;
+                    }
+
+                    #h5{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

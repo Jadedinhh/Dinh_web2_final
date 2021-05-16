@@ -475,3 +475,30 @@ ul li {
 #tips > div ul li section > div {
   grid-area: tips-content;
 }
+
+#human > div h1 {
+  text-align: center;
+}
+#human > div article {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". human-content .";
+}
+#human > div article p2 {
+  display: none;
+}
+#human > div article > div {
+  grid-area: human-content;
+}
+#human > div aside > div ul #h2 {
+  display: none;
+}
+#human > div aside > div ul #h3 {
+  display: none;
+}
+#human > div aside > div ul #h4 {
+  display: none;
+}
+#human > div aside > div ul #h5 {
+  display: none;
+}
