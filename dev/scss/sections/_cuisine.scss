@@ -1,0 +1,35 @@
+#cuisine{
+    >div{
+        ul{
+            li{
+                section{
+                    display: grid;
+                 grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". cuisine-content .";
+
+                >div{
+                grid-area: cuisine-content;
+                }
+                }
+                
+            }
+
+            #cuisine-intro{
+                h1{
+                    text-align: center;
+                }
+
+            }
+
+            .dishes{
+                p{
+                    display: none;
+                }
+            
+            
+            }
+
+           
+        }
+    }
+}
