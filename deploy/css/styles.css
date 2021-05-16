@@ -454,3 +454,18 @@ ul li {
   text-align: right;
   grid-area: quote;
 }
+
+#tips > div h1 {
+  text-align: center;
+}
+#tips > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". tips-content .";
+}
+#tips > div ul li section h4 {
+  text-align: center;
+}
+#tips > div ul li section > div {
+  grid-area: tips-content;
+}

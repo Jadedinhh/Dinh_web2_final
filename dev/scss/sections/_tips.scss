@@ -1,0 +1,25 @@
+#tips{
+    >div{
+        h1{
+            text-align: center;
+        }
+        ul{
+            li{
+                section{
+                    display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". tips-content .";
+                h4{
+                    text-align: center;
+                }
+
+                >div{
+                    grid-area: tips-content;
+                }
+                }
+                
+            }
+        }
+    }
+
+}
