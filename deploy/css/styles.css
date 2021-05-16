@@ -429,3 +429,18 @@ ul li {
 #attractions > div #attractions-intro p {
   display: none;
 }
+
+#cuisine > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". cuisine-content .";
+}
+#cuisine > div ul li section > div {
+  grid-area: cuisine-content;
+}
+#cuisine > div ul #cuisine-intro h1 {
+  text-align: center;
+}
+#cuisine > div ul .dishes p {
+  display: none;
+}
