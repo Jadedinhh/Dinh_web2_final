@@ -830,14 +830,34 @@ ul li {
 #human > div aside > div ul #h2 {
   display: none;
 }
+@media (min-width: 1024px) {
+  #human > div aside > div ul #h2 {
+    display: list-item;
+  }
+}
 #human > div aside > div ul #h3 {
   display: none;
+}
+@media (min-width: 1024px) {
+  #human > div aside > div ul #h3 {
+    display: list-item;
+  }
 }
 #human > div aside > div ul #h4 {
   display: none;
 }
+@media (min-width: 1024px) {
+  #human > div aside > div ul #h4 {
+    display: list-item;
+  }
+}
 #human > div aside > div ul #h5 {
   display: none;
+}
+@media (min-width: 1024px) {
+  #human > div aside > div ul #h5 {
+    display: list-item;
+  }
 }
 #human > div .guide {
   background-color: #003049;
