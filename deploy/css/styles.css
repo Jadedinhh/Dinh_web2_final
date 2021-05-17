@@ -696,22 +696,84 @@ ul li {
   grid-area: quote;
 }
 
+@media (min-width: 768px) {
+  #tips {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-areas: ". tips .";
+  }
+}
+@media (min-width: 1024px) {
+  #tips {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #tips {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 768px) {
+  #tips > div {
+    grid-area: tips;
+  }
+}
 #tips > div h1 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #tips > div h1 {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #tips > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "where how" "when restriction";
+    gap: 60px;
+  }
 }
 #tips > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". tips-content .";
 }
+@media (min-width: 768px) {
+  #tips > div ul li section {
+    grid-template-columns: 0 auto 0;
+  }
+}
 #tips > div ul li section h4 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #tips > div ul li section h4 {
+    text-align: left;
+  }
 }
 #tips > div ul li section > div {
   grid-area: tips-content;
 }
+#tips > div ul #where {
+  grid-area: where;
+}
+#tips > div ul #how {
+  grid-area: how;
+}
+#tips > div ul #when {
+  grid-area: when;
+}
+#tips > div ul #restriction {
+  grid-area: restriction;
+}
 #tips > div #img {
   background-color: #C7D1D6;
+}
+@media (min-width: 768px) {
+  #tips > div #img {
+    background-color: #fff;
+  }
 }
 
 #human > div h1 {

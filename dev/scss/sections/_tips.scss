@@ -1,16 +1,51 @@
 #tips{
+    @include md{
+        display: grid;
+        grid-template-columns: auto 600px auto;
+        grid-template-areas: ". tips .";
+    }
+
+    @include lg{
+        grid-template-columns: auto 900px auto;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
     >div{
+        @include md{
+            grid-area: tips;
+        }
+
         h1{
             text-align: center;
+            @include md{
+                text-align: left;
+            }
         }
         ul{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "where how"
+                                      "when restriction";
+                gap: 60px;
+            }
             li{
                 section{
                     display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". tips-content .";
+
+                @include md{
+                    grid-template-columns: 0 auto 0;
+                }
+
                 h4{
                     text-align: center;
+                    @include md{
+                        text-align: left;
+                    }
                 }
 
                 >div{
@@ -19,10 +54,30 @@
                 }
                 
             }
+
+            #where{
+                grid-area: where;
+            }
+
+            #how{
+                grid-area: how;
+            }
+
+            #when{
+                grid-area: when;
+            }
+
+            #restriction{
+                grid-area: restriction;
+            }
         }
 
         #img{
             background-color: $smoked-blue;
+            @include md{
+                background-color: $white
+                ;
+            }
         }
     }
 
