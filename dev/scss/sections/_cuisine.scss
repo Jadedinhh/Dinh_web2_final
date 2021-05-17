@@ -22,10 +22,10 @@
 
             ul {
 
-                @include md {
                     display: grid;
                     grid-template-columns: 50% auto;
                     grid-template-areas: "streetfood coffee";
+                    @include md {
                     gap: 7px;
                     grid-area: dishes;
                 }

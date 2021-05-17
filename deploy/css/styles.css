@@ -614,11 +614,13 @@ ul li {
     grid-template-columns: auto 1000px auto;
   }
 }
+#cuisine > div > div ul {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "streetfood coffee";
+}
 @media (min-width: 768px) {
   #cuisine > div > div ul {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "streetfood coffee";
     gap: 7px;
     grid-area: dishes;
   }
