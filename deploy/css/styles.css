@@ -592,27 +592,88 @@ ul li {
   }
 }
 
-#cuisine > div ul li section {
+@media (min-width: 768px) {
+  #cuisine {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". cuisine .";
+  }
+}
+#cuisine > div {
+  grid-area: cuisine;
+}
+@media (min-width: 768px) {
+  #cuisine > div > div {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". dishes .";
+  }
+}
+@media (min-width: 1200px) {
+  #cuisine > div > div {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 768px) {
+  #cuisine > div > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "streetfood coffee";
+    gap: 7px;
+    grid-area: dishes;
+  }
+}
+#cuisine > div > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cuisine-content .";
 }
-#cuisine > div ul li section > div {
+@media (min-width: 768px) {
+  #cuisine > div > div ul li section {
+    grid-template-columns: 0 auto 0;
+  }
+}
+#cuisine > div > div ul li section > div {
   grid-area: cuisine-content;
 }
-#cuisine > div ul #cuisine-intro h1 {
-  text-align: center;
-}
-#cuisine > div ul #cuisine-intro img {
+#cuisine > div > div ul #streetfood p {
   display: none;
 }
 @media (min-width: 768px) {
-  #cuisine > div ul #cuisine-intro img {
+  #cuisine > div > div ul #streetfood p {
+    display: list-item;
+    grid-area: streetfood;
+  }
+}
+#cuisine > div > div ul #coffee p {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cuisine > div > div ul #coffee p {
+    display: list-item;
+    grid-area: coffee;
+  }
+}
+#cuisine > div #cuisine-intro h1 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #cuisine > div #cuisine-intro h1 {
+    text-align: left;
+  }
+}
+#cuisine > div #cuisine-intro img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cuisine > div #cuisine-intro img {
     display: list-item;
   }
 }
-#cuisine > div ul .dishes p {
-  display: none;
+@media (min-width: 768px) {
+  #cuisine > div #cuisine-intro p {
+    width: 300px;
+  }
 }
 
 #quote {

@@ -1,44 +1,110 @@
-#cuisine{
-    >div{
-        ul{
-            li{
-                section{
-                    display: grid;
-                 grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". cuisine-content .";
+#cuisine {
+    @include md {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". cuisine .";
+    }
 
-                >div{
-                grid-area: cuisine-content;
-                }
-                }
-                
+    >div {
+        grid-area: cuisine;
+
+        >div {
+
+            @include md {
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". dishes .";
             }
 
-            #cuisine-intro{
-                h1{
-                    text-align: center;
+            @include xl{
+                grid-template-columns: auto 1000px auto;
+            }
+
+            ul {
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "streetfood coffee";
+                    gap: 7px;
+                    grid-area: dishes;
                 }
 
-                img{
-                    display: none;
+                li {
+                    section {
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas: ". cuisine-content .";
+
+                        @include md {
+                            grid-template-columns: 0 auto 0;
+                        }
+
+                        >div {
+                            grid-area: cuisine-content;
+                        }
+                    }
+
                 }
-                @include md{
-                    img{
-                        display: list-item;
+
+
+
+                #streetfood {
+                    p {
+                        display: none;
+
+                        @include md {
+                            display: list-item;
+                            grid-area: streetfood;
+                        }
                     }
                 }
 
-            }
+                #coffee {
+                    p {
+                        display: none;
 
-            .dishes{
-                p{
-                    display: none;
+                        @include md {
+                            display: list-item;
+                            grid-area: coffee;
+                        }
+                    }
                 }
-            
-            
+
+
+            }
+        }
+
+
+        #cuisine-intro {
+            h1 {
+                text-align: center;
+
+                @include md {
+                    text-align: left;
+                }
+
             }
 
-           
+            img {
+                display: none;
+
+
+            }
+
+            @include md {
+                img {
+                    display: list-item;
+                }
+            }
+
+            p {
+                @include md {
+                    width: 300px;
+                }
+            }
+
+
         }
     }
 }
