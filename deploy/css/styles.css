@@ -813,52 +813,85 @@ ul li {
     text-align: left;
   }
 }
-#human > div article {
+@media (min-width: 768px) {
+  #human > div > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "info gallery";
+  }
+}
+#human > div > div article {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". human-content .";
 }
 @media (min-width: 768px) {
-  #human > div article {
+  #human > div > div article {
     grid-template-columns: 0 auto 0;
   }
 }
-#human > div article p2 {
+#human > div > div article p2 {
   display: none;
 }
-#human > div article > div {
+#human > div > div article > div {
   grid-area: human-content;
 }
-#human > div aside > div ul #h2 {
-  display: none;
-}
 @media (min-width: 1024px) {
-  #human > div aside > div ul #h2 {
-    display: list-item;
+  #human > div > div aside ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "h3 h1" "h2 h1" "h5 h4";
   }
 }
-#human > div aside > div ul #h3 {
-  display: none;
-}
 @media (min-width: 1024px) {
-  #human > div aside > div ul #h3 {
-    display: list-item;
+  #human > div > div aside ul #h1 {
+    grid-area: h1;
   }
 }
-#human > div aside > div ul #h4 {
+#human > div > div aside ul #h2 {
   display: none;
 }
 @media (min-width: 1024px) {
-  #human > div aside > div ul #h4 {
+  #human > div > div aside ul #h2 {
     display: list-item;
+    grid-area: h2;
   }
 }
-#human > div aside > div ul #h5 {
+#human > div > div aside ul #h3 {
   display: none;
 }
 @media (min-width: 1024px) {
-  #human > div aside > div ul #h5 {
+  #human > div > div aside ul #h3 {
     display: list-item;
+    grid-area: h3;
+  }
+}
+#human > div > div aside ul #h4 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #human > div > div aside ul #h4 {
+    display: list-item;
+    grid-area: h4;
+  }
+}
+#human > div > div aside ul #h5 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #human > div > div aside ul #h5 {
+    display: list-item;
+    grid-area: h5;
+  }
+}
+@media (min-width: 768px) {
+  #human > div > div #info {
+    grid-area: info;
+  }
+}
+@media (min-width: 768px) {
+  #human > div > div #gallery {
+    grid-area: gallery;
   }
 }
 #human > div .guide {
