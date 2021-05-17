@@ -1,29 +1,134 @@
-#attractions{
+#attractions {
+    @include md {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". attractions .";
+    }
 
-    >div{
+    @include lg {
+        grid-template-columns: auto 900px auto;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1100px auto;
+    }
+
+    >div {
         background-color: $smoked-blue;
-        ul{
-            li{
-                 section{
-                     display: grid;
-                     grid-template-columns: 16px auto 16px;
+
+        @include md {
+            background-color: $white;
+            grid-area: attractions;
+        }
+
+        ul {
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "a1 a2"
+                    "a3 a4"
+                    "a5 a6";
+
+                gap: 60px;
+            }
+
+            @include lg {
+                grid-area: attraction-list;
+                gap: 16px;
+            }
+
+            @include xl {
+                gap: 100px;
+            }
+
+            li {
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
                     grid-template-areas: ". attractions-content .";
 
-                    >div{
+                    @include md {
+                        grid-template-columns: 0px auto 0px;
+                    }
+
+                    >div {
                         grid-area: attractions-content;
                     }
-                 }
+                }
+            }
+
+            #a1 {
+                @include md {
+                    grid-area: a1;
+                }
+
+            }
+
+            #a2 {
+                @include md {
+                    grid-area: a2;
+                }
+
+            }
+
+            #a3 {
+                @include md {
+                    grid-area: a3;
+                }
+
+            }
+
+            #a4 {
+                @include md {
+                    grid-area: a4;
+                }
+
+            }
+
+            #a5 {
+                @include md {
+                    grid-area: a5;
+                }
+
+            }
+
+            #a6 {
+                @include md {
+                    grid-area: a6;
+                }
+
             }
         }
 
-        #attractions-intro{
-            h1{
-                text-align: center;
+
+    }
+
+    #attractions-intro {
+        h1 {
+            text-align: center;
+
+            @include md {
+                text-align: left;
+
             }
-            p{
-                display: none;
+        }
+
+        p {
+            display: none;
+
+            @include md {
+                display: list-item;
+                width: 70%;
+            }
+
+            @include lg {
+                width: 60%;
+            }
+
+            @include xl {
+                width: 75%;
             }
         }
     }
 }
-
