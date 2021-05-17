@@ -476,22 +476,120 @@ ul li {
   grid-area: glance-content;
 }
 
+@media (min-width: 768px) {
+  #attractions {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". attractions .";
+  }
+}
+@media (min-width: 1024px) {
+  #attractions {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #attractions {
+    grid-template-columns: auto 1100px auto;
+  }
+}
 #attractions > div {
   background-color: #C7D1D6;
+}
+@media (min-width: 768px) {
+  #attractions > div {
+    background-color: #fff;
+    grid-area: attractions;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #attractions > div ul {
+    grid-area: attraction-list;
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #attractions > div ul {
+    gap: 100px;
+  }
 }
 #attractions > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". attractions-content .";
 }
+@media (min-width: 768px) {
+  #attractions > div ul li section {
+    grid-template-columns: 0px auto 0px;
+  }
+}
 #attractions > div ul li section > div {
   grid-area: attractions-content;
 }
-#attractions > div #attractions-intro h1 {
+@media (min-width: 768px) {
+  #attractions > div ul #a1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul #a2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul #a3 {
+    grid-area: a3;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul #a4 {
+    grid-area: a4;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul #a5 {
+    grid-area: a5;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div ul #a6 {
+    grid-area: a6;
+  }
+}
+#attractions #attractions-intro h1 {
   text-align: center;
 }
-#attractions > div #attractions-intro p {
+@media (min-width: 768px) {
+  #attractions #attractions-intro h1 {
+    text-align: left;
+  }
+}
+#attractions #attractions-intro p {
   display: none;
+}
+@media (min-width: 768px) {
+  #attractions #attractions-intro p {
+    display: list-item;
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  #attractions #attractions-intro p {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #attractions #attractions-intro p {
+    width: 75%;
+  }
 }
 
 #cuisine > div ul li section {
