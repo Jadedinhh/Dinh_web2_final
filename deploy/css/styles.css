@@ -681,6 +681,16 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". quote .";
 }
+@media (min-width: 768px) {
+  #quote {
+    grid-template-columns: 10vw auto 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  #quote {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 #quote > div {
   text-align: right;
   grid-area: quote;
