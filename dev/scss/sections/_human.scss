@@ -1,7 +1,27 @@
 #human{
+    @include md{
+        display: grid;
+        grid-template-columns: auto 600px auto;
+        grid-template-areas: ". human .";
+    }
+
+    @include lg{
+        grid-template-columns: auto 900px auto;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
     >div{
+        @include md{
+            grid-area: human;
+        }
         h1{
             text-align: center;
+            @include md{
+                text-align: left;
+            }
         }
 
 
@@ -9,6 +29,9 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". human-content .";
+            @include md{
+                grid-template-columns: 0 auto 0;
+            }
 
             p2{
                 display: none;
@@ -53,7 +76,7 @@
        
             background-color: $prussian;
             height: 8px;
-            width: 60%;
+            width: 100%;
             margin-top: 5px;
             
             >div{

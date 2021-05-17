@@ -675,6 +675,11 @@ ul li {
     width: 300px;
   }
 }
+@media (min-width: 1024px) {
+  #cuisine > div #cuisine-intro p {
+    width: 40%;
+  }
+}
 
 #quote {
   display: grid;
@@ -776,13 +781,45 @@ ul li {
   }
 }
 
+@media (min-width: 768px) {
+  #human {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-areas: ". human .";
+  }
+}
+@media (min-width: 1024px) {
+  #human {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #human {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 768px) {
+  #human > div {
+    grid-area: human;
+  }
+}
 #human > div h1 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #human > div h1 {
+    text-align: left;
+  }
 }
 #human > div article {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". human-content .";
+}
+@media (min-width: 768px) {
+  #human > div article {
+    grid-template-columns: 0 auto 0;
+  }
 }
 #human > div article p2 {
   display: none;
@@ -805,7 +842,7 @@ ul li {
 #human > div .guide {
   background-color: #003049;
   height: 8px;
-  width: 60%;
+  width: 100%;
   margin-top: 5px;
 }
 #human > div .guide > div {
