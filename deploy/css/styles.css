@@ -415,10 +415,37 @@ ul li {
   grid-area: hero-content;
 }
 
+@media (min-width: 768px) {
+  #glance {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-areas: ". glance . ";
+  }
+}
+@media (min-width: 1024px) {
+  #glance {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 768px) {
+  #glance > div {
+    grid-area: glance;
+  }
+}
+@media (min-width: 768px) {
+  #glance > div > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: " aside glance-content ";
+  }
+}
+#glance > div > div aside {
+  grid-area: aside;
+}
 #glance > div .guide {
   background-color: #003049;
   height: 8px;
-  width: 60%;
+  width: 100%;
   margin-top: 5px;
 }
 #glance > div .guide > div {
@@ -432,8 +459,18 @@ ul li {
 #glance > div #glance-content p2 {
   display: none;
 }
+@media (min-width: 1024px) {
+  #glance > div #glance-content p2 {
+    display: list-item;
+  }
+}
 #glance > div #glance-content p3 {
   display: none;
+}
+@media (min-width: 1024px) {
+  #glance > div #glance-content p3 {
+    display: list-item;
+  }
 }
 #glance > div #glance-content > div {
   grid-area: glance-content;

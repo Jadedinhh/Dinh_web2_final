@@ -1,11 +1,41 @@
 #glance{
+ 
+    @include md{
+        display: grid;
+             grid-template-columns: auto 600px auto;
+             grid-template-areas: ". glance . ";
+
+    }
+
+    @include lg{
+        grid-template-columns: auto 900px auto;
+    }
+
 >div{
+
+    @include md{
+        grid-area: glance;
+    }
+
+    >div{
+         @include md{
+             display: grid;
+             grid-template-columns: 50% auto;
+             grid-template-areas: " aside glance-content ";
+         }
+
+         aside{
+             grid-area: aside;
+         }
+    }
+   
+
 
     .guide{
        
         background-color: $prussian;
         height: 8px;
-        width: 60%;
+        width: 100%;
         margin-top: 5px;
         
         >div{
@@ -20,14 +50,21 @@
 
         p2{
             display: none;
+            @include lg{
+                display: list-item;
+            }
         }
 
         p3{
             display: none;
+            @include lg{
+                display: list-item;
+            }
         }
 
         >div{
             grid-area: glance-content;
+          
         }
     }
 }
