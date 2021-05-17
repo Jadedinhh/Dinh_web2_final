@@ -504,6 +504,9 @@ ul li {
 #tips > div ul li section > div {
   grid-area: tips-content;
 }
+#tips > div #img {
+  background-color: #C7D1D6;
+}
 
 #human > div h1 {
   text-align: center;
