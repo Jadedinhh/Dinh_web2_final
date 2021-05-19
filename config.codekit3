@@ -29,7 +29,7 @@
       "oAP" : "\/deploy\/img\/attraction\/cathedral.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -42,7 +42,7 @@
       "oAP" : "\/deploy\/img\/attraction\/dong-xuan.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -55,20 +55,7 @@
       "oAP" : "\/deploy\/img\/attraction\/long-bien1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/attraction\/phung-hung.jpg" : {
-      "ft" : 16384,
-      "iS" : 524042,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/attraction\/phung-hung.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -81,20 +68,7 @@
       "oAP" : "\/deploy\/img\/attraction\/puppet.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/attraction\/xe chay.png" : {
-      "ft" : 32768,
-      "iS" : 1589491,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/attraction\/xe chay.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -107,7 +81,7 @@
       "oAP" : "\/deploy\/img\/cuisine\/cha-ca.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -120,7 +94,7 @@
       "oAP" : "\/deploy\/img\/cuisine\/note-coffee.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -260,6 +234,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/design\/Dinh_Hanoi_Web.sketch" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/Dinh_Hanoi_Web.sketch",
+      "oF" : 0
     },
     "\/dev\/content\/attractions.kit" : {
       "cB" : 0,
