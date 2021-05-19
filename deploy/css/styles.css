@@ -828,45 +828,26 @@ ul li {
     text-align: left;
   }
 }
-@media (min-width: 768px) {
-  #human > div > div {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "info gallery";
-  }
-}
-#human > div > div article {
+#human > div > div #info {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". human-content .";
 }
 @media (min-width: 768px) {
-  #human > div > div article {
-    grid-template-columns: 0 auto 0;
-  }
-}
-#human > div > div article p2 {
-  display: none;
-}
-#human > div > div article > div {
-  grid-area: human-content;
-}
-#human > div > div aside ul #h2 {
-  display: none;
-}
-#human > div > div aside ul #h3 {
-  display: none;
-}
-#human > div > div aside ul #h4 {
-  display: none;
-}
-#human > div > div aside ul #h5 {
-  display: none;
-}
-@media (min-width: 768px) {
   #human > div > div #info {
     grid-area: info;
   }
+}
+@media (min-width: 768px) {
+  #human > div > div #info {
+    grid-template-columns: 0 auto 0;
+  }
+}
+#human > div > div #info p2 {
+  display: none;
+}
+#human > div > div #info > div {
+  grid-area: human-content;
 }
 @media (min-width: 768px) {
   #human > div > div #gallery {
