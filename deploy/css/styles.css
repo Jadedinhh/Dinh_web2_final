@@ -411,23 +411,8 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
-@media (min-width: 1024px) {
-  #hero #hero-content {
-    grid-template-columns: auto 900px auto;
-  }
-}
-@media (min-width: 1200px) {
-  #hero #hero-content {
-    grid-template-columns: auto 1100px auto;
-  }
-}
 #hero #hero-content > div {
   grid-area: hero-content;
-}
-@media (min-width: 768px) {
-  #hero #hero-content > div p {
-    width: 60%;
-  }
 }
 
 @media (min-width: 768px) {
