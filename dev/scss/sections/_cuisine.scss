@@ -12,16 +12,17 @@
                 grid-template-areas: ". dishes .";
             }
 
-            @include xl{
+            @include xl {
                 grid-template-columns: auto 1000px auto;
             }
 
             ul {
 
-                    display: grid;
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: "streetfood coffee";
-                    @include md {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "streetfood coffee";
+
+                @include md {
                     gap: 7px;
                     grid-area: dishes;
                 }
@@ -74,46 +75,50 @@
 
         #cuisine-intro {
 
-             @include md { 
+            @include md {
                 background-image: url("../img/cuisine/pun.jpg");
                 height: 300px;
                 background-position: center;
                 background-size: cover;
-              
+display: flex;
+align-items: flex-end;
             }
-            section{
 
-                >div{
+            // section{
+
+            >div {
 
                 h1 {
-                text-align: center;
-                
+                    text-align: center;
 
-                @include md {
-                    color: $white;
-                    text-align: left;
+
+                    @include md {
+                        color: $white;
+                        text-align: left;
+                        padding-left: 16px;
+                    }
+
+                }
+
+                p {
                     padding-left: 16px;
-                }
 
-            }
+                    @include md {
+                        color: $white;
+                        width: 300px;
+                    }
 
-            p {
-                padding-left: 16px;
-                @include md {
-                    color: $white;
-                    width: 300px;
-                }
-
-                @include lg{
-                    width: 40%;
+                    @include lg {
+                        width: 40%;
+                    }
                 }
             }
-            }
-            }
 
-            
+            // }
 
-            
+
+
+
 
 
         }

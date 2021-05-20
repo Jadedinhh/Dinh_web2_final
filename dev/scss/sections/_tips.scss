@@ -3,7 +3,8 @@
         display: grid;
         grid-template-columns: auto 600px auto;
         grid-template-areas: ". tips .";
-        background-color: $smoked-blue;
+        // background-color: $smoked-blue;
+        margin-top: -400px;
        
     }
 

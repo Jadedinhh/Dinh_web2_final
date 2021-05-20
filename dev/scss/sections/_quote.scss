@@ -1,27 +1,33 @@
-#quote{
+#quote {
 
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". quote .";
-  
 
 
-    @include md{
+
+    @include md {
         grid-template-columns: 10vw auto 10vw;
         background-image: url("../img/tips/house.png");
         background-position: top;
         background-size: cover;
-       grid-template-rows: 200px;
+        grid-template-rows: 200px;
         padding: 72px 0;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
         grid-template-rows: 400px;
     }
 
-    >div{
+    >div {
         text-align: right;
         grid-area: quote;
+
     }
+}
+
+#quote-bottom {
+    height: 400px;
+    background-color: $smoked-blue;
 }

@@ -391,6 +391,9 @@ ul li {
 /* =============
     Navigation
 ============= */
+#header {
+  color: #fff;
+}
 #header ul li {
   display: flex;
   justify-content: space-around;
@@ -436,17 +439,20 @@ footer > div #subscribe {
   grid-area: subscribe;
 }
 
+#hero {
+  margin-top: -30px;
+}
 #hero > div #hero-image {
   background-image: url("../img/header/xich-lo.jpg");
   background-position: center;
   background-size: cover;
   height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #hero > div #hero-image i {
   color: #EAE2B7;
-  display: flex;
-  align-self: center;
-  justify-content: center;
   font-size: 3.125rem;
 }
 #hero > div #hero-content {
@@ -723,29 +729,31 @@ footer > div #subscribe {
     height: 300px;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
   }
 }
-#cuisine > div #cuisine-intro section > div h1 {
+#cuisine > div #cuisine-intro > div h1 {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #cuisine > div #cuisine-intro section > div h1 {
+  #cuisine > div #cuisine-intro > div h1 {
     color: #fff;
     text-align: left;
     padding-left: 16px;
   }
 }
-#cuisine > div #cuisine-intro section > div p {
+#cuisine > div #cuisine-intro > div p {
   padding-left: 16px;
 }
 @media (min-width: 768px) {
-  #cuisine > div #cuisine-intro section > div p {
+  #cuisine > div #cuisine-intro > div p {
     color: #fff;
     width: 300px;
   }
 }
 @media (min-width: 1024px) {
-  #cuisine > div #cuisine-intro section > div p {
+  #cuisine > div #cuisine-intro > div p {
     width: 40%;
   }
 }
@@ -776,12 +784,17 @@ footer > div #subscribe {
   grid-area: quote;
 }
 
+#quote-bottom {
+  height: 400px;
+  background-color: #C7D1D6;
+}
+
 @media (min-width: 768px) {
   #tips {
     display: grid;
     grid-template-columns: auto 600px auto;
     grid-template-areas: ". tips .";
-    background-color: #C7D1D6;
+    margin-top: -400px;
   }
 }
 @media (min-width: 1024px) {

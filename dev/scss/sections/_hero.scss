@@ -1,4 +1,5 @@
 #hero {
+   margin-top: -30px;
     >div {
 
         #hero-image{
@@ -6,13 +7,13 @@
             background-position: center;
             background-size: cover;
             height: 800px;
-           
+            display: flex;
+                align-items: center;
+                justify-content: center;
             
             i{
                 color: $egg;
-                 display: flex;
-                align-self: center;
-                justify-content: center;
+                
                 font-size: rem-calc(50);
             }
         }
