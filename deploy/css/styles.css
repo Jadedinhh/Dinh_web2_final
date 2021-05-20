@@ -534,6 +534,9 @@ ul li {
   #attractions > div {
     background-color: #fff;
     grid-area: attractions;
+    background-image: url("../img/attraction/cot-dien.svg");
+    background-position: left;
+    background-size: cover;
   }
 }
 @media (min-width: 768px) {
@@ -542,7 +545,6 @@ ul li {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     gap: 60px;
-    background-image: url("../img/attraction/cot-dien.png");
   }
 }
 @media (min-width: 1024px) {
@@ -555,10 +557,6 @@ ul li {
   #attractions > div ul {
     gap: 100px;
   }
-}
-#attractions > div ul li {
-  background-position: left;
-  background-size: cover;
 }
 #attractions > div ul li section {
   display: grid;
