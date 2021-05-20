@@ -6,14 +6,14 @@
             background-position: center;
             background-size: cover;
             height: 800px;
-            display: flex;
+           
             
             i{
                 color: $white;
-                
+                 display: flex;
                 align-items: center;
                 justify-content: center;
-                // padding-top: 70%;
+                font-size: rem-calc(50);
             }
         }
 
