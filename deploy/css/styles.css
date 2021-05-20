@@ -491,6 +491,9 @@ footer > div #subscribe {
 #hero > div #hero-content > div {
   grid-area: hero-content;
 }
+#hero > div #hero-content > div h1 {
+  font-family: "Sora", sans-serif;
+}
 @media (min-width: 768px) {
   #hero > div #hero-content > div p {
     width: 60%;
