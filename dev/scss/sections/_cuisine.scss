@@ -76,13 +76,16 @@
 
              @include md { 
                 background-image: url("../img/cuisine/pun.jpg");
-                height: 560px;
+                height: 300px;
                 background-position: center;
                 background-size: cover;
               
             }
+            section{
 
-            h1 {
+                >div{
+
+                h1 {
                 text-align: center;
                 
 
@@ -105,6 +108,12 @@
                     width: 40%;
                 }
             }
+            }
+            }
+
+            
+
+            
 
 
         }
