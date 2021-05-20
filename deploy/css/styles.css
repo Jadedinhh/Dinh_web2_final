@@ -727,6 +727,10 @@ ul li {
 @media (min-width: 768px) {
   #quote {
     grid-template-columns: 10vw auto 10vw;
+    background-image: url("../img/tips/house.png");
+    background-position: top;
+    background-size: cover;
+    padding: 72px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -759,14 +763,6 @@ ul li {
 @media (min-width: 768px) {
   #tips > div {
     grid-area: tips;
-  }
-}
-#tips > div h1 {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  #tips > div h1 {
-    text-align: left;
   }
 }
 @media (min-width: 768px) {
@@ -810,11 +806,19 @@ ul li {
 #tips > div ul #restriction {
   grid-area: restriction;
 }
-#tips > div #img {
+#tips > div > div h1 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #tips > div > div h1 {
+    text-align: left;
+  }
+}
+#tips > div > div #img {
   background-color: #C7D1D6;
 }
 @media (min-width: 768px) {
-  #tips > div #img {
+  #tips > div > div #img {
     background-color: #fff;
   }
 }

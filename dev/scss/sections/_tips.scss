@@ -17,12 +17,7 @@
             grid-area: tips;
         }
 
-        h1{
-            text-align: center;
-            @include md{
-                text-align: left;
-            }
-        }
+        
         ul{
             @include md{
                 display: grid;
@@ -72,13 +67,24 @@
             }
         }
 
-        #img{
+        >div{
+            h1{
+                text-align: center;
+                @include md{
+                    text-align: left;
+                }
+            }
+
+            #img{
             background-color: $smoked-blue;
             @include md{
                 background-color: $white
                 ;
             }
         }
+        }
+
+        
     }
 
 }

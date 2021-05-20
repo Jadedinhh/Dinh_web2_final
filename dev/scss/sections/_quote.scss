@@ -3,9 +3,15 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". quote .";
+  
+
 
     @include md{
         grid-template-columns: 10vw auto 10vw;
+        background-image: url("../img/tips/house.png");
+        background-position: top;
+        background-size: cover;
+        padding: 72px 0;
     }
 
     @include xl{
