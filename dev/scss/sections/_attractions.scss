@@ -20,7 +20,11 @@
 
         @include md {
             background-color: $white;
-            grid-area: attractions;
+            grid-area: attractions; 
+            background-image: url("../img/attraction/cot-dien.svg");
+            background-position: left;
+            background-size: cover;
+            
         }
 
         ul {
@@ -33,7 +37,7 @@
                     "a5 a6";
 
                 gap: 60px;
-                background-image: url("../img/attraction/cot-dien.png");
+               
          
             }
 
@@ -47,8 +51,7 @@
             }
 
             li {
-                background-position: left;
-                background-size: cover;
+                
                 
                 section {
                     display: grid;
