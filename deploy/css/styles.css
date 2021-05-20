@@ -854,49 +854,57 @@ ul li {
     grid-template-areas: "info gallery";
   }
 }
-#human > div > div article {
+#human > div > div #info {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". human-content .";
 }
 @media (min-width: 768px) {
-  #human > div > div article {
-    grid-template-columns: 0 auto 0;
-  }
-}
-#human > div > div article p2 {
-  display: none;
-}
-#human > div > div article > div {
-  grid-area: human-content;
-}
-#human > div > div aside ul #h2 {
-  display: none;
-}
-#human > div > div aside ul #h3 {
-  display: none;
-}
-#human > div > div aside ul #h4 {
-  display: none;
-}
-#human > div > div aside ul #h5 {
-  display: none;
-}
-@media (min-width: 768px) {
   #human > div > div #info {
+    grid-template-columns: 0 auto 0;
     grid-area: info;
   }
 }
+#human > div > div #info p2 {
+  display: none;
+}
 @media (min-width: 768px) {
-  #human > div > div #gallery {
+  #human > div > div #info p2 {
+    display: contents;
+  }
+}
+#human > div > div #info > div {
+  grid-area: human-content;
+}
+@media (min-width: 768px) {
+  #human > div > div #gallery ul {
     grid-area: gallery;
   }
+}
+#human > div > div #gallery ul #h2 {
+  display: none;
+}
+#human > div > div #gallery ul #h3 {
+  display: none;
+}
+#human > div > div #gallery ul #h4 {
+  display: none;
+}
+#human > div > div #gallery ul #h5 {
+  display: none;
 }
 #human > div .guide {
   background-color: #003049;
   height: 8px;
-  width: 100%;
+  width: 60%;
   margin-top: 5px;
+  margin-left: 20%;
+}
+@media (min-width: 768px) {
+  #human > div .guide {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 #human > div .guide > div {
   background-position: center;

@@ -36,107 +36,86 @@
                 grid-template-areas: "info gallery";
             }
 
-            article {
+
+            #info{
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". human-content .";
 
                 @include md {
                     grid-template-columns: 0 auto 0;
+                    grid-area: info;
                 }
 
                 p2 {
                     display: none;
+                    @include md{
+                        display: contents;
+                    }
                 }
 
                 >div {
                     grid-area: human-content;
                 }
-            }
 
-            aside {
-                
-                    ul { 
-                        // @include lg{
-                        //     display: grid;
-                        //     grid-template-columns: repeat(2,1fr);
-                        //     grid-template-areas: "h3 h1"
-                        //                          "h2 h1"
-                        //                          "h5 h4";
-                        // }
-
-                        li {}
-
-                        #h1 {
-                            // @include lg{
-                            //     grid-area: h1;
-                            // }
-                        }
-
-                        #h2 {
-                            display: none;
-
-                            // @include lg {
-                            //     display: list-item;
-                            //     grid-area: h2;
-                            // }
-                        }
-
-                        #h3 {
-                            display: none;
-
-                            // @include lg {
-                            //     display: list-item;
-                            //     grid-area: h3;
-                            // }
-                        }
-
-                        #h4 {
-                            display: none;
-
-                            // @include lg {
-                            //     display: list-item;
-                            //     grid-area: h4;
-                            // }
-                        }
-
-                        #h5 {
-                            display: none;
-
-                            // @include lg {
-                            //     display: list-item;
-                            //     grid-area: h5;
-                            // }
-                        }
-                    
-                }
-            }
-
-            #info{
-              @include md{
-                  grid-area: info;
-              }
+              
             }
 
             #gallery{
-                @include md{
+                ul{
+                     @include md{
                     grid-area: gallery;
                 }
+                li{
+
+                }
+                #h1{
+                    
+                }
+
+                #h2{
+                    display: none;
+
+                }
+
+                #h3{
+                    display: none;
+
+                }
+
+                #h4{
+                    display: none;
+
+                }
+
+                #h5{
+                    display: none;
+
+                }
+                }
+               
             }
         }
 
 
 
 
-        .guide {
-
+        .guide{
+       
             background-color: $prussian;
             height: 8px;
-            width: 100%;
+            width: 60%;
             margin-top: 5px;
-
-            >div {
+           margin-left: 20%;
+    
+           @include md{
+               width: 100%;
+               margin-left: 0px;
+           }
+            
+            >div{
                 background-position: center;
+                
             }
         }
     }
