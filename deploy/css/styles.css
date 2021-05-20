@@ -542,6 +542,7 @@ ul li {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     gap: 60px;
+    background-image: url("../img/attraction/cot-dien.png");
   }
 }
 @media (min-width: 1024px) {
@@ -554,6 +555,10 @@ ul li {
   #attractions > div ul {
     gap: 100px;
   }
+}
+#attractions > div ul li {
+  background-position: left;
+  background-size: cover;
 }
 #attractions > div ul li section {
   display: grid;
@@ -611,13 +616,13 @@ ul li {
 }
 @media (min-width: 768px) {
   #attractions #attractions-intro p {
-    display: list-item;
+    display: contents;
     width: 70%;
   }
 }
 @media (min-width: 1024px) {
   #attractions #attractions-intro p {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
