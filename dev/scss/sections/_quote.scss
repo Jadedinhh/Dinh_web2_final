@@ -11,11 +11,13 @@
         background-image: url("../img/tips/house.png");
         background-position: top;
         background-size: cover;
+       grid-template-rows: 200px;
         padding: 72px 0;
     }
 
     @include xl{
         grid-template-columns: auto 1000px auto;
+        grid-template-rows: 400px;
     }
 
     >div{

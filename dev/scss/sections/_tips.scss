@@ -3,6 +3,7 @@
         display: grid;
         grid-template-columns: auto 600px auto;
         grid-template-areas: ". tips .";
+        background-color: $smoked-blue;
     }
 
     @include lg{
@@ -68,6 +69,8 @@
         }
 
         >div{
+           
+           
             h1{
                 text-align: center;
                 @include md{
@@ -78,7 +81,8 @@
             #img{
             background-color: $smoked-blue;
             @include md{
-                background-color: $white
+                background-color: none
+                
                 ;
             }
         }

@@ -761,12 +761,14 @@ footer > div #subscribe {
     background-image: url("../img/tips/house.png");
     background-position: top;
     background-size: cover;
+    grid-template-rows: 200px;
     padding: 72px 0;
   }
 }
 @media (min-width: 1200px) {
   #quote {
     grid-template-columns: auto 1000px auto;
+    grid-template-rows: 400px;
   }
 }
 #quote > div {
@@ -779,6 +781,7 @@ footer > div #subscribe {
     display: grid;
     grid-template-columns: auto 600px auto;
     grid-template-areas: ". tips .";
+    background-color: #C7D1D6;
   }
 }
 @media (min-width: 1024px) {
@@ -850,7 +853,7 @@ footer > div #subscribe {
 }
 @media (min-width: 768px) {
   #tips > div > div #img {
-    background-color: #fff;
+    background-color: none;
   }
 }
 
