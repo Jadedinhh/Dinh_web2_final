@@ -66,31 +66,55 @@
                      @include md{
                     grid-area: gallery;
                 }
+
+                @include lg{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-areas: "h3 h1"
+                                         "h2 h1"
+                                         "h5 h4";
+                }
                 li{
 
                 }
                 #h1{
-                    
+                    @include lg{
+                        grid-area: h1;
+                    }
                 }
 
                 #h2{
                     display: none;
 
+                    @include lg{
+                        display: list-item;
+                        grid-area: h2;
+                    }
+
                 }
 
                 #h3{
                     display: none;
-
+                    @include lg{
+                        display: list-item;
+                        grid-area: h3;
+                    }
                 }
 
                 #h4{
                     display: none;
-
+                    @include lg{
+                        display: list-item;
+                        grid-area: h4;
+                    }
                 }
 
                 #h5{
                     display: none;
-
+                    @include lg{
+                        display: list-item;
+                        grid-area: h5;
+                    }
                 }
                 }
                
