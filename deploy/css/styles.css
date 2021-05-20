@@ -626,13 +626,6 @@ ul li {
   }
 }
 
-@media (min-width: 768px) {
-  #cuisine {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". cuisine .";
-  }
-}
 #cuisine > div {
   grid-area: cuisine;
 }
@@ -690,24 +683,30 @@ ul li {
     grid-area: coffee;
   }
 }
+@media (min-width: 768px) {
+  #cuisine > div #cuisine-intro {
+    background-image: url("../img/cuisine/pun.jpg");
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+  }
+}
 #cuisine > div #cuisine-intro h1 {
   text-align: center;
 }
 @media (min-width: 768px) {
   #cuisine > div #cuisine-intro h1 {
+    color: #fff;
     text-align: left;
+    padding-left: 16px;
   }
 }
-#cuisine > div #cuisine-intro img {
-  display: none;
-}
-@media (min-width: 768px) {
-  #cuisine > div #cuisine-intro img {
-    display: list-item;
-  }
+#cuisine > div #cuisine-intro p {
+  padding-left: 16px;
 }
 @media (min-width: 768px) {
   #cuisine > div #cuisine-intro p {
+    color: #fff;
     width: 300px;
   }
 }
