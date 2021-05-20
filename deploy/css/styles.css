@@ -644,7 +644,7 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #attractions #attractions-intro p {
     display: contents;
-    width: 70%;
+    width: 20%;
   }
 }
 @media (min-width: 1024px) {
@@ -910,6 +910,9 @@ footer > div #subscribe {
 }
 #human > div > div #info > div {
   grid-area: human-content;
+}
+#human > div > div #info > div button {
+  display: block;
 }
 @media (min-width: 768px) {
   #human > div > div #gallery ul {
