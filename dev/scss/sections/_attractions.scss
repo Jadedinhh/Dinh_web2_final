@@ -1,5 +1,5 @@
 #attractions {
-   
+    margin-bottom: 64px;
     @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;

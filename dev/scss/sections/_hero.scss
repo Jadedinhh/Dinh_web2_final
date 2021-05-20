@@ -1,55 +1,55 @@
 #hero {
-   margin-top: -30px;
-    >div {
+    margin-top: -100px;
+    margin-bottom: 64px;
 
-        #hero-image{
+    >div {
+        #hero-image {
+            align-items: center;
             background-image: url("../img/header/xich-lo.jpg");
             background-position: center;
             background-size: cover;
-            height: 800px;
             display: flex;
-                align-items: center;
-                justify-content: center;
-            
-            i{
+            height: 800px;
+            justify-content: center;
+
+            @include lg {
+                height: 900px;
+            }
+
+            @include xl {
+                height: 1000px;
+            }
+
+            i {
                 color: $egg;
-                
+                cursor: pointer;
                 font-size: rem-calc(50);
             }
         }
 
         #hero-content {
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero-content .";
+            display: grid;
+            grid-template-areas: ". hero-content .";
+            grid-template-columns: 16px auto 16px;
+            margin-top: 13px;
 
-        @include lg {
-            grid-template-columns: auto 900px auto;
-        }
-    
-        @include xl {
-            grid-template-columns: auto 1100px auto;
-        }
-            
+         @include lg {
+                grid-template-columns: auto 900px auto;
+            }
+
+            @include xl {
+                grid-template-columns: auto 1100px auto;
+            }
 
             >div {
                 grid-area: hero-content;
-               
-                p{
-                    @include md{
-                    width: 60%;
-                } 
+
+                p {
+                    @include md {
+                        width: 60%;
+                    }
                 }
-               
-
-                
             }
-
-
-
-        
+        }
     }
-    }
-
-    
 }

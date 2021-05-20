@@ -1,5 +1,5 @@
 #glance{
- 
+    margin-bottom: 64px;
     @include md{
         display: grid;
              grid-template-columns: auto 600px auto;
@@ -55,6 +55,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". glance-content .";
+        padding-bottom: 60px;
 
         p2{
             display: none;

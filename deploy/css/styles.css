@@ -393,6 +393,7 @@ ul li {
 ============= */
 #header {
   color: #fff;
+  padding: 15px 0;
 }
 #header ul li {
   display: flex;
@@ -440,25 +441,38 @@ footer > div #subscribe {
 }
 
 #hero {
-  margin-top: -30px;
+  margin-top: -100px;
+  margin-bottom: 64px;
 }
 #hero > div #hero-image {
+  align-items: center;
   background-image: url("../img/header/xich-lo.jpg");
   background-position: center;
   background-size: cover;
-  height: 800px;
   display: flex;
-  align-items: center;
+  height: 800px;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-image {
+    height: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div #hero-image {
+    height: 1000px;
+  }
 }
 #hero > div #hero-image i {
   color: #EAE2B7;
+  cursor: pointer;
   font-size: 3.125rem;
 }
 #hero > div #hero-content {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+  grid-template-columns: 16px auto 16px;
+  margin-top: 13px;
 }
 @media (min-width: 1024px) {
   #hero > div #hero-content {
@@ -479,6 +493,9 @@ footer > div #subscribe {
   }
 }
 
+#glance {
+  margin-bottom: 64px;
+}
 @media (min-width: 768px) {
   #glance {
     display: grid;
@@ -526,6 +543,7 @@ footer > div #subscribe {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". glance-content .";
+  padding-bottom: 60px;
 }
 #glance > div #glance-content p2 {
   display: none;
@@ -547,6 +565,9 @@ footer > div #subscribe {
   grid-area: glance-content;
 }
 
+#attractions {
+  margin-bottom: 64px;
+}
 @media (min-width: 768px) {
   #attractions {
     display: grid;
@@ -666,6 +687,9 @@ footer > div #subscribe {
   }
 }
 
+#cuisine {
+  margin-bottom: 64px;
+}
 #cuisine > div {
   grid-area: cuisine;
 }
@@ -785,26 +809,37 @@ footer > div #subscribe {
 }
 
 #quote-bottom {
-  height: 400px;
-  background-color: #C7D1D6;
+  background-color: white;
+  height: 64px;
+}
+@media (min-width: 768px) {
+  #quote-bottom {
+    height: 200px;
+    background-color: #C7D1D6;
+  }
 }
 
+#tips {
+  margin-bottom: 64px;
+}
 @media (min-width: 768px) {
   #tips {
     display: grid;
     grid-template-columns: auto 600px auto;
     grid-template-areas: ". tips .";
-    margin-top: -400px;
+    margin-top: -250px;
   }
 }
 @media (min-width: 1024px) {
   #tips {
     grid-template-columns: auto 900px auto;
+    margin-top: -300px;
   }
 }
 @media (min-width: 1200px) {
   #tips {
     grid-template-columns: auto 1000px auto;
+    margin-top: -450px;
   }
 }
 @media (min-width: 768px) {
@@ -860,6 +895,9 @@ footer > div #subscribe {
   #tips > div > div h1 {
     text-align: left;
   }
+}
+#human {
+  margin-bottom: 64px;
 }
 @media (min-width: 768px) {
   #human {

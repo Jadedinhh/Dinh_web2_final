@@ -1,19 +1,23 @@
 #tips{
+    margin-bottom: 64px;
     @include md{
         display: grid;
         grid-template-columns: auto 600px auto;
         grid-template-areas: ". tips .";
         // background-color: $smoked-blue;
-        margin-top: -400px;
+        margin-top: -250px;
        
     }
 
+
     @include lg{
         grid-template-columns: auto 900px auto;
+        margin-top: -300px;
     }
 
     @include xl{
         grid-template-columns: auto 1000px auto;
+        margin-top: -450px;
     }
     >div{
         @include md{

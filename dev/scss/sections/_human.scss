@@ -1,4 +1,5 @@
 #human {
+    margin-bottom: 64px;
     @include md {
         display: grid;
         grid-template-columns: auto 600px auto;

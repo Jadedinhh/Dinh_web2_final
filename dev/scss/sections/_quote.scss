@@ -1,5 +1,5 @@
 #quote {
-
+    // margin-bottom: 64px;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". quote .";
@@ -28,6 +28,12 @@
 }
 
 #quote-bottom {
-    height: 400px;
+    background-color: white;
+    height: 64px;
+
+    @include md{
+        height: 200px;
     background-color: $smoked-blue;
+    }
+    
 }
