@@ -35,11 +35,18 @@
        
         background-color: $prussian;
         height: 8px;
-        width: 100%;
+        width: 60%;
         margin-top: 5px;
+       margin-left: 20%;
+
+       @include md{
+           width: 100%;
+           margin-left: 0px;
+       }
         
         >div{
             background-position: center;
+            
         }
     }
 
@@ -51,14 +58,14 @@
         p2{
             display: none;
             @include lg{
-                display: list-item;
+                display: contents;
             }
         }
 
         p3{
             display: none;
             @include lg{
-                display: list-item;
+                display: contents;
             }
         }
 

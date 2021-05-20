@@ -406,13 +406,40 @@ ul li {
   grid-area: footer;
 }
 
-#hero #hero-content {
+#hero > div #hero-image {
+  background-image: url("../img/header/xich-lo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+}
+#hero > div #hero-image i {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+#hero > div #hero-content {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
-#hero #hero-content > div {
+@media (min-width: 1024px) {
+  #hero > div #hero-content {
+    grid-template-columns: auto 900px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div #hero-content {
+    grid-template-columns: auto 1100px auto;
+  }
+}
+#hero > div #hero-content > div {
   grid-area: hero-content;
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content > div p {
+    width: 60%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -445,8 +472,15 @@ ul li {
 #glance > div .guide {
   background-color: #003049;
   height: 8px;
-  width: 100%;
+  width: 60%;
   margin-top: 5px;
+  margin-left: 20%;
+}
+@media (min-width: 768px) {
+  #glance > div .guide {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 #glance > div .guide > div {
   background-position: center;
@@ -461,7 +495,7 @@ ul li {
 }
 @media (min-width: 1024px) {
   #glance > div #glance-content p2 {
-    display: list-item;
+    display: contents;
   }
 }
 #glance > div #glance-content p3 {
@@ -469,7 +503,7 @@ ul li {
 }
 @media (min-width: 1024px) {
   #glance > div #glance-content p3 {
-    display: list-item;
+    display: contents;
   }
 }
 #glance > div #glance-content > div {

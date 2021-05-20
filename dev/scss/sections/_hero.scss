@@ -1,17 +1,45 @@
 #hero {
-    >div {}
+    >div {
 
-    #hero-content {
+        #hero-image{
+            background-image: url("../img/header/xich-lo.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 800px;
+            display: flex;
+            
+            i{
+                color: $white;
+                
+                align-items: center;
+                justify-content: center;
+                // padding-top: 70%;
+            }
+        }
+
+        #hero-content {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero-content .";
 
-       
+        @include lg {
+            grid-template-columns: auto 900px auto;
+        }
+    
+        @include xl {
+            grid-template-columns: auto 1100px auto;
+        }
             
 
             >div {
                 grid-area: hero-content;
-                
+               
+                p{
+                    @include md{
+                    width: 60%;
+                } 
+                }
+               
 
                 
             }
@@ -20,4 +48,7 @@
 
         
     }
+    }
+
+    
 }
