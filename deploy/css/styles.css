@@ -393,17 +393,46 @@ ul li {
 ============= */
 #header ul li {
   display: flex;
-  space-between: 2px;
 }
 
-#footer {
+footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
   background-color: #EAE2B7;
+  padding: 40px 0;
 }
-#footer > div {
+footer > div {
   grid-area: footer;
+  display: grid;
+  grid-template-areas: "h1 socials" "subscribe subscribe";
+  grid-template-columns: 50% auto;
+}
+footer > div h1 {
+  grid-area: h1;
+}
+footer > div #socials {
+  grid-area: socials;
+}
+footer > div #socials ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer > div #socials ul li {
+  margin: 0 5px;
+}
+footer > div #socials ul li a:link,
+footer > div #socials ul li a:visited {
+  color: #fff;
+  font-size: 1.25rem;
+  transition: 0.25s;
+}
+footer > div #socials ul li a:hover,
+footer > div #socials ul li a:active {
+  color: #1E555C;
+}
+footer > div #subscribe {
+  grid-area: subscribe;
 }
 
 #hero > div #hero-image {

@@ -1,10 +1,50 @@
-#footer{
+footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     background-color: $egg;
+    padding: 40px 0;
 
     >div{
         grid-area: footer;
+
+        display: grid;
+        grid-template-areas: "h1 socials"
+                             "subscribe subscribe";
+        grid-template-columns: 50% auto;
+        
+        h1{
+            grid-area: h1;
+        }
+        
+        #socials{
+            grid-area: socials;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+
+                
+
+                li {
+                    margin: 0 5px;
+
+                    a:link,
+                    a:visited {
+                        color: $white;
+                        font-size: rem-calc(20);
+                        transition: 0.25s;
+                    }
+
+                    a:hover,
+                    a:active {
+                        color: $ocean;
+                    }
+                }
+            }
+        }
+        
+        #subscribe{
+            grid-area: subscribe;
+        }
     }
 }
