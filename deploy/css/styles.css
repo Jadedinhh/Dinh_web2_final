@@ -493,6 +493,7 @@ footer > div #subscribe {
 }
 #hero > div #hero-content > div h1 {
   font-family: "Sora", sans-serif;
+  color: #003049;
 }
 @media (min-width: 768px) {
   #hero > div #hero-content > div p {
