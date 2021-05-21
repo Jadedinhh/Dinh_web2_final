@@ -395,6 +395,17 @@ ul li {
 /* =============
     Navigation
 ============= */
+.green-button {
+  background-color: #86A873;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Sora", sans-serif;
+  padding: 6px;
+}
+
 #header {
   color: #fff;
   padding: 15px 0;
@@ -448,6 +459,11 @@ footer > div #subscribe {
   margin-top: -100px;
   margin-bottom: 64px;
 }
+@media (min-width: 768px) {
+  #hero {
+    margin-bottom: 77px;
+  }
+}
 #hero > div #hero-image {
   align-items: center;
   background-image: url("../img/header/xich-lo.jpg");
@@ -493,11 +509,28 @@ footer > div #subscribe {
 }
 #hero > div #hero-content > div h1 {
   font-family: "Sora", sans-serif;
+  line-height: 40px;
   color: #003049;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content > div h1 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content > div h1 {
+    font-size: 2.5rem;
+  }
+}
+#hero > div #hero-content > div p {
+  color: #414B3F;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   #hero > div #hero-content > div p {
     width: 60%;
+    font-size: 1.125rem;
   }
 }
 

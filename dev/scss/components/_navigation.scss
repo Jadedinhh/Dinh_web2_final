@@ -1,3 +1,13 @@
 /* =============
     Navigation
 ============= */
+.green-button{
+    background-color: $asparagus;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    font-size: rem-calc(16);
+    font-weight: 500;
+    font-family: 'Sora', sans-serif;
+    padding: 6px;
+}
