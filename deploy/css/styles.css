@@ -565,10 +565,26 @@ footer > div #subscribe {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: " aside glance-content ";
+    grid-template-rows: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #glance > div > div {
+    grid-template-rows: 600px;
   }
 }
 #glance > div > div aside {
   grid-area: aside;
+}
+@media (min-width: 768px) {
+  #glance > div > div aside {
+    background-image: url("../img/glance/pho-co.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  #glance > div > div aside img {
+    display: none;
+  }
 }
 #glance > div .guide {
   background-color: #1E555C;
@@ -581,6 +597,7 @@ footer > div #subscribe {
     width: 100%;
     margin-left: 0px;
     height: 15px;
+    margin-top: 40px;
   }
 }
 #glance > div .guide > div {
@@ -615,35 +632,30 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #glance > div #glance-content > div p {
     font-size: 1.125rem;
+    padding-bottom: 10px;
+    padding-bottom: 50px;
   }
 }
 #glance > div #glance-content > div p2 {
   display: none;
-}
-@media (min-width: 768px) {
-  #glance > div #glance-content > div p2 {
-    font-size: 1.125rem;
-  }
 }
 @media (min-width: 1024px) {
   #glance > div #glance-content > div p2 {
     display: contents;
     color: #414B3F;
     line-height: 24px;
+    font-size: 1.125rem;
     font-weight: 300;
   }
 }
 #glance > div #glance-content > div p3 {
   display: none;
 }
-@media (min-width: 768px) {
-  #glance > div #glance-content > div p3 {
-    font-size: 1.125rem;
-  }
-}
 @media (min-width: 1024px) {
   #glance > div #glance-content > div p3 {
-    display: contents;
+    margin-top: 10px;
+    display: block;
+    font-size: 1.125rem;
     color: #414B3F;
     line-height: 24px;
     font-weight: 300;

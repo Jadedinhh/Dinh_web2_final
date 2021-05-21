@@ -19,14 +19,30 @@
         }
 
         >div {
+
             @include md {
                 display: grid;
                 grid-template-columns: 50% auto;
                 grid-template-areas: " aside glance-content ";
+                grid-template-rows: 400px;
+            }
+
+            @include lg{
+                grid-template-rows: 600px;
             }
 
             aside {
                 grid-area: aside;
+               
+                @include md{
+                     background-image: url("../img/glance/pho-co.jpg"); 
+                     background-position: center;
+                     background-size: cover;
+                     img{
+                    display: none;
+                }
+                }
+               
 
             }
         }
@@ -44,6 +60,7 @@
                 width: 100%;
                 margin-left: 0px;
                 height: 15px;
+                margin-top: 40px;
             }
 
             >div {
@@ -70,6 +87,7 @@
                     @include md {
                         text-align: left;
                         font-size: rem-calc(30);
+                       
                     }
                 }
 
@@ -80,6 +98,8 @@
 
                     @include md{
                         font-size: rem-calc(18);
+                        padding-bottom: 10px; 
+                        padding-bottom: 50px;
                     }
 
                 }
@@ -87,27 +107,24 @@
                 p2 {
                     display: none;
 
-                    @include md{
-                        font-size: rem-calc(18);
-                    }
-
                     @include lg {
                         display: contents;
                         color: $rock;
                         line-height: 24px;
+                        font-size: rem-calc(18);
                     font-weight: 300;
+                    
                     }
                 }
 
                 p3 {
                     display: none;
 
-                    @include md{
-                        font-size: rem-calc(18);
-                    }
-
+                
                     @include lg {
-                        display: contents;
+                        margin-top: 10px;
+                        display: block;
+                        font-size: rem-calc(18);
                         color: $rock;
                         line-height: 24px;
                     font-weight: 300;
@@ -119,6 +136,8 @@
                         justify-content: flex-end;
                     .green-button{
                        margin-top: 10px;
+
+                     
 
                        @include lg{
                            display: none;
