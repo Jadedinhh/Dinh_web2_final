@@ -1,81 +1,108 @@
-#glance{
+#glance {
     margin-bottom: 64px;
-    @include md{
+
+    @include md {
         display: grid;
-             grid-template-columns: auto 600px auto;
-             grid-template-areas: ". glance . ";
+        grid-template-columns: auto 600px auto;
+        grid-template-areas: ". glance . ";
 
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: auto 900px auto;
     }
 
->div{
+    >div {
 
-    @include md{
-        grid-area: glance;
-    }
-
-    >div{
-         @include md{
-             display: grid;
-             grid-template-columns: 50% auto;
-             grid-template-areas: " aside glance-content ";
-         }
-
-         aside{
-             grid-area: aside;
-             
-         }
-    }
-   
-
-
-    .guide{
-       
-        background-color: $prussian;
-        height: 8px;
-        width: 60%;
-        margin-top: 5px;
-       margin-left: 20%;
-
-       @include md{
-           width: 100%;
-           margin-left: 0px;
-       }
-        
-        >div{
-            background-position: center;
-            
+        @include md {
+            grid-area: glance;
         }
-    }
 
-     #glance-content{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". glance-content .";
-        padding-bottom: 60px;
+        >div {
+            @include md {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: " aside glance-content ";
+            }
 
-        p2{
-            display: none;
-            @include lg{
-                display: contents;
+            aside {
+                grid-area: aside;
+
             }
         }
 
-        p3{
-            display: none;
-            @include lg{
-                display: contents;
+
+
+        .guide {
+
+            background-color: $prussian;
+            height: 8px;
+            width: 60%;
+            margin-top: 5px;
+            margin-left: 20%;
+
+            @include md {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            >div {
+                background-position: center;
+
             }
         }
 
-        >div{
-            grid-area: glance-content;
-          
+        #glance-content {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". glance-content .";
+            padding-bottom: 60px;
+
+            >div {
+                grid-area: glance-content;
+
+                h1 {
+                    font-family: 'Sora', sans-serif;
+                    text-align: center;
+                    color: $prussian;
+                    padding: 10px 0;
+
+                    @include md {
+                        text-align: left;
+                    }
+                }
+
+                p{
+                    color: $rock;
+
+                }
+
+                p2 {
+                    display: none;
+
+                    @include lg {
+                        display: contents;
+                        color: $rock;
+                    }
+                }
+
+                p3 {
+                    display: none;
+
+                    @include lg {
+                        display: contents;
+                        color: $rock;
+                    }
+                }
+
+                >div{
+                    .green-button{
+                        
+                    }
+                }
+
+            }
         }
     }
-}
-   
+
 }
