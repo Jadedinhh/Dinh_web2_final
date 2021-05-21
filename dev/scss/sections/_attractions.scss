@@ -1,10 +1,14 @@
 #attractions {
     margin-bottom: 64px;
+
     @include md {
+        // grid-template-rows: ;
+        background-image: url("../img/attraction/cot-dien.svg");
+        background-position: left;
+        background-size: cover;
         display: grid;
-        grid-template-columns: 16px auto 16px;
         grid-template-areas: ". attractions .";
-        
+        grid-template-columns: 16px auto 16px;
     }
 
     @include lg {
@@ -19,31 +23,23 @@
         background-color: $smoked-blue;
 
         @include md {
-            background-color: $white;
-            grid-area: attractions; 
-            background-image: url("../img/attraction/cot-dien.svg");
-            background-position: left;
-            background-size: cover;
-            
+            background-color: transparent;
+            grid-area: attractions;
         }
 
         ul {
-
             @include md {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                gap: 60px;
                 grid-template-areas: "a1 a2"
                     "a3 a4"
                     "a5 a6";
-
-                gap: 60px;
-               
-         
+                grid-template-columns: repeat(2, 1fr);
             }
 
             @include lg {
-                grid-area: attraction-list;
                 gap: 16px;
+                grid-area: attraction-list;
             }
 
             @include xl {
@@ -51,12 +47,12 @@
             }
 
             li {
-                
-                
+                padding-bottom: 24px;
+
                 section {
                     display: grid;
-                    grid-template-columns: 16px auto 16px;
                     grid-template-areas: ". attractions-content .";
+                    grid-template-columns: 16px auto 16px;
 
                     @include md {
                         grid-template-columns: 0px auto 0px;
@@ -69,58 +65,169 @@
             }
 
             #a1 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
                 @include md {
                     grid-area: a1;
                 }
-
             }
 
             #a2 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
                 @include md {
                     grid-area: a2;
                 }
-
             }
 
             #a3 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
                 @include md {
                     grid-area: a3;
                 }
-
             }
 
             #a4 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
                 @include md {
                     grid-area: a4;
                 }
-
             }
 
             #a5 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
                 @include md {
                     grid-area: a5;
                 }
-
             }
 
             #a6 {
+                h3{
+                    color: $ocean;
+                   font-family: 'Sora', sans-serif;
+                   padding: 10px 0;
+                   font-size: rem-calc(18);
+
+                   @include lg{
+                       font-size: rem-calc(23);
+                   }
+                }
+                p{
+                    color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(17);
+                    }
+                }
+                padding-bottom: 50px;
                 @include md {
                     grid-area: a6;
                 }
-
             }
         }
-
-
-    }
-
-    #attractions-intro {
+        #attractions-intro {
         h1 {
+            color: $prussian;
+            font-family: 'Sora', sans-serif;
+            padding: 30px 0;
             text-align: center;
 
             @include md {
                 text-align: left;
+            }
 
+            @include lg{
+                font-size: rem-calc(40);
             }
         }
 
@@ -141,4 +248,7 @@
             }
         }
     }
+    }
+
+    
 }

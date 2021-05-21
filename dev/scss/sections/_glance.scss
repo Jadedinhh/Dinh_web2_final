@@ -3,9 +3,9 @@
 
     @include md {
         display: grid;
-        grid-template-columns: auto 600px auto;
         grid-template-areas: ". glance . ";
-
+        grid-template-columns: auto 600px auto;
+        margin-bottom: 0;
     }
 
     @include lg {
@@ -13,150 +13,135 @@
     }
 
     >div {
-
         @include md {
             grid-area: glance;
         }
 
         >div {
-
             @include md {
                 display: grid;
-                grid-template-columns: 50% auto;
                 grid-template-areas: " aside glance-content ";
+                grid-template-columns: 50% auto;
                 grid-template-rows: 400px;
             }
 
-            @include lg{
+            @include lg {
                 grid-template-rows: 520px;
             }
 
             aside {
                 grid-area: aside;
-               
-                @include md{
-                     background-image: url("../img/glance/pho-co.jpg"); 
-                     background-position: center;
-                     background-size: cover;
-                     img{
-                    display: none;
-                }
-                }
-                
-              
 
+                @include md {
+                    background-image: url("../img/glance/pho-co.jpg");
+                    background-position: center;
+                    background-size: cover;
+
+                    img {
+                        display: none;
+                    }
+                }
             }
         }
 
-
-
         .guide {
-
             background-color: $ocean;
             height: 8px;
-            width: 60%;
             margin-left: 20%;
+            width: 60%;
 
             @include md {
-                width: 100%;
-                margin-left: 0px;
                 height: 15px;
+                margin-left: 0px;
                 margin-top: 40px;
+                width: 100%;
             }
 
             >div {
                 background-position: center;
-
             }
         }
 
         #glance-content {
             display: grid;
-            grid-template-columns: 16px auto 16px;
             grid-template-areas: ". glance-content .";
+            grid-template-columns: 16px auto 16px;
             padding-bottom: 40px;
 
             >div {
                 grid-area: glance-content;
 
                 h1 {
-                    font-family: 'Sora', sans-serif;
-                    text-align: center;
-                    color: $prussian;
                     // padding-top: -10px;
+                    color: $prussian;
+                    font-family: 'Sora', sans-serif;
                     padding-bottom: 10px;
+                    text-align: center;
 
                     @include md {
-                        text-align: left;
                         font-size: rem-calc(30);
                         padding-bottom: 15px;
-                       
+                        text-align: left;
                     }
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(40);
                     }
                 }
 
-                p{
+                p {
                     color: $rock;
-                    line-height: 24px;
                     font-weight: 300;
+                    line-height: 24px;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(18);
                         padding-bottom: 45px;
                     }
 
-                    @include lg{
+                    @include lg {
                         padding-bottom: 10px;
                     }
-
                 }
 
                 p2 {
                     display: none;
 
                     @include lg {
-                        display: contents;
                         color: $rock;
-                        line-height: 24px;
+                        display: contents;
                         font-size: rem-calc(18);
-                    font-weight: 300;
-                    
+                        font-weight: 300;
+                        line-height: 24px;
                     }
                 }
 
                 p3 {
                     display: none;
 
-                
                     @include lg {
-                        margin-top: 10px;
+                        color: $rock;
                         display: block;
                         font-size: rem-calc(18);
-                        color: $rock;
+                        font-weight: 300;
                         line-height: 24px;
-                    font-weight: 300;
+                        margin-top: 10px;
                     }
                 }
 
-                >div{ 
+                >div {
                     display: flex;
-                        justify-content: flex-end;
-                    .green-button{
-                       margin-top: 10px;
+                    justify-content: flex-end;
 
-                     
+                    .green-button {
+                        margin-top: 10px;
 
-                       @include lg{
-                           display: none;
-                       }
+                        @include lg {
+                            display: none;
+                        }
                     }
                 }
-
             }
         }
     }
-
 }

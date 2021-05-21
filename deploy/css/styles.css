@@ -546,8 +546,9 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #glance {
     display: grid;
-    grid-template-columns: auto 600px auto;
     grid-template-areas: ". glance . ";
+    grid-template-columns: auto 600px auto;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -563,8 +564,8 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #glance > div > div {
     display: grid;
-    grid-template-columns: 50% auto;
     grid-template-areas: " aside glance-content ";
+    grid-template-columns: 50% auto;
     grid-template-rows: 400px;
   }
 }
@@ -589,15 +590,15 @@ footer > div #subscribe {
 #glance > div .guide {
   background-color: #1E555C;
   height: 8px;
-  width: 60%;
   margin-left: 20%;
+  width: 60%;
 }
 @media (min-width: 768px) {
   #glance > div .guide {
-    width: 100%;
-    margin-left: 0px;
     height: 15px;
+    margin-left: 0px;
     margin-top: 40px;
+    width: 100%;
   }
 }
 #glance > div .guide > div {
@@ -605,24 +606,24 @@ footer > div #subscribe {
 }
 #glance > div #glance-content {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". glance-content .";
+  grid-template-columns: 16px auto 16px;
   padding-bottom: 40px;
 }
 #glance > div #glance-content > div {
   grid-area: glance-content;
 }
 #glance > div #glance-content > div h1 {
-  font-family: "Sora", sans-serif;
-  text-align: center;
   color: #003049;
+  font-family: "Sora", sans-serif;
   padding-bottom: 10px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #glance > div #glance-content > div h1 {
-    text-align: left;
     font-size: 1.875rem;
     padding-bottom: 15px;
+    text-align: left;
   }
 }
 @media (min-width: 1024px) {
@@ -632,8 +633,8 @@ footer > div #subscribe {
 }
 #glance > div #glance-content > div p {
   color: #414B3F;
-  line-height: 24px;
   font-weight: 300;
+  line-height: 24px;
 }
 @media (min-width: 768px) {
   #glance > div #glance-content > div p {
@@ -651,11 +652,11 @@ footer > div #subscribe {
 }
 @media (min-width: 1024px) {
   #glance > div #glance-content > div p2 {
-    display: contents;
     color: #414B3F;
-    line-height: 24px;
+    display: contents;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 24px;
   }
 }
 #glance > div #glance-content > div p3 {
@@ -663,12 +664,12 @@ footer > div #subscribe {
 }
 @media (min-width: 1024px) {
   #glance > div #glance-content > div p3 {
-    margin-top: 10px;
+    color: #414B3F;
     display: block;
     font-size: 1.125rem;
-    color: #414B3F;
-    line-height: 24px;
     font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
   }
 }
 #glance > div #glance-content > div > div {
@@ -689,9 +690,12 @@ footer > div #subscribe {
 }
 @media (min-width: 768px) {
   #attractions {
+    background-image: url("../img/attraction/cot-dien.svg");
+    background-position: left;
+    background-size: cover;
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". attractions .";
+    grid-template-columns: 16px auto 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -709,25 +713,22 @@ footer > div #subscribe {
 }
 @media (min-width: 768px) {
   #attractions > div {
-    background-color: #fff;
+    background-color: transparent;
     grid-area: attractions;
-    background-image: url("../img/attraction/cot-dien.svg");
-    background-position: left;
-    background-size: cover;
   }
 }
 @media (min-width: 768px) {
   #attractions > div ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     gap: 60px;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
   #attractions > div ul {
-    grid-area: attraction-list;
     gap: 16px;
+    grid-area: attraction-list;
   }
 }
 @media (min-width: 1200px) {
@@ -735,10 +736,13 @@ footer > div #subscribe {
     gap: 100px;
   }
 }
+#attractions > div ul li {
+  padding-bottom: 24px;
+}
 #attractions > div ul li section {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". attractions-content .";
+  grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 768px) {
   #attractions > div ul li section {
@@ -748,9 +752,51 @@ footer > div #subscribe {
 #attractions > div ul li section > div {
   grid-area: attractions-content;
 }
+#attractions > div ul #a1 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a1 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a1 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a1 p {
+    font-size: 1.0625rem;
+  }
+}
 @media (min-width: 768px) {
   #attractions > div ul #a1 {
     grid-area: a1;
+  }
+}
+#attractions > div ul #a2 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a2 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a2 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a2 p {
+    font-size: 1.0625rem;
   }
 }
 @media (min-width: 768px) {
@@ -758,9 +804,51 @@ footer > div #subscribe {
     grid-area: a2;
   }
 }
+#attractions > div ul #a3 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a3 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a3 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a3 p {
+    font-size: 1.0625rem;
+  }
+}
 @media (min-width: 768px) {
   #attractions > div ul #a3 {
     grid-area: a3;
+  }
+}
+#attractions > div ul #a4 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a4 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a4 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a4 p {
+    font-size: 1.0625rem;
   }
 }
 @media (min-width: 768px) {
@@ -768,9 +856,54 @@ footer > div #subscribe {
     grid-area: a4;
   }
 }
+#attractions > div ul #a5 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a5 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a5 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a5 p {
+    font-size: 1.0625rem;
+  }
+}
 @media (min-width: 768px) {
   #attractions > div ul #a5 {
     grid-area: a5;
+  }
+}
+#attractions > div ul #a6 {
+  padding-bottom: 50px;
+}
+#attractions > div ul #a6 h3 {
+  color: #1E555C;
+  font-family: "Sora", sans-serif;
+  padding: 10px 0;
+  font-size: 1.125rem;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a6 h3 {
+    font-size: 1.4375rem;
+  }
+}
+#attractions > div ul #a6 p {
+  color: #414B3F;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  #attractions > div ul #a6 p {
+    font-size: 1.0625rem;
   }
 }
 @media (min-width: 768px) {
@@ -778,30 +911,38 @@ footer > div #subscribe {
     grid-area: a6;
   }
 }
-#attractions #attractions-intro h1 {
+#attractions > div #attractions-intro h1 {
+  color: #003049;
+  font-family: "Sora", sans-serif;
+  padding: 30px 0;
   text-align: center;
 }
 @media (min-width: 768px) {
-  #attractions #attractions-intro h1 {
+  #attractions > div #attractions-intro h1 {
     text-align: left;
   }
 }
-#attractions #attractions-intro p {
+@media (min-width: 1024px) {
+  #attractions > div #attractions-intro h1 {
+    font-size: 2.5rem;
+  }
+}
+#attractions > div #attractions-intro p {
   display: none;
 }
 @media (min-width: 768px) {
-  #attractions #attractions-intro p {
+  #attractions > div #attractions-intro p {
     display: contents;
     width: 20%;
   }
 }
 @media (min-width: 1024px) {
-  #attractions #attractions-intro p {
+  #attractions > div #attractions-intro p {
     width: 40%;
   }
 }
 @media (min-width: 1200px) {
-  #attractions #attractions-intro p {
+  #attractions > div #attractions-intro p {
     width: 75%;
   }
 }
