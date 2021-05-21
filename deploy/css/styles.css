@@ -1054,7 +1054,7 @@ footer > div #subscribe {
     background-position: top;
     background-size: cover;
     grid-template-rows: 200px;
-    padding: 72px 0;
+    padding: 72px 0 150px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1066,6 +1066,47 @@ footer > div #subscribe {
 #quote > div {
   text-align: right;
   grid-area: quote;
+}
+#quote > div h1 {
+  color: #1E555C;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 44px;
+}
+@media (min-width: 768px) {
+  #quote > div h1 {
+    font-size: 2.8125rem;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #quote > div h1 {
+    font-size: 4.0625rem;
+    line-height: 63px;
+  }
+}
+@media (min-width: 1200px) {
+  #quote > div h1 {
+    font-size: 4.375rem;
+    line-height: 71px;
+  }
+}
+#quote > div h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #414B3F;
+}
+@media (min-width: 768px) {
+  #quote > div h2 {
+    font-size: 1.5625rem;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #quote > div h2 {
+    font-size: 1.875rem;
+  }
 }
 
 #quote-bottom {
