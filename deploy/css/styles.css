@@ -570,7 +570,7 @@ footer > div #subscribe {
 }
 @media (min-width: 1024px) {
   #glance > div > div {
-    grid-template-rows: 600px;
+    grid-template-rows: 520px;
   }
 }
 #glance > div > div aside {
@@ -616,12 +616,18 @@ footer > div #subscribe {
   font-family: "Sora", sans-serif;
   text-align: center;
   color: #003049;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   #glance > div #glance-content > div h1 {
     text-align: left;
     font-size: 1.875rem;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  #glance > div #glance-content > div h1 {
+    font-size: 2.5rem;
   }
 }
 #glance > div #glance-content > div p {
@@ -632,8 +638,12 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #glance > div #glance-content > div p {
     font-size: 1.125rem;
+    padding-bottom: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  #glance > div #glance-content > div p {
     padding-bottom: 10px;
-    padding-bottom: 50px;
   }
 }
 #glance > div #glance-content > div p2 {

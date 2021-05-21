@@ -28,7 +28,7 @@
             }
 
             @include lg{
-                grid-template-rows: 600px;
+                grid-template-rows: 520px;
             }
 
             aside {
@@ -42,7 +42,8 @@
                     display: none;
                 }
                 }
-               
+                
+              
 
             }
         }
@@ -82,12 +83,18 @@
                     font-family: 'Sora', sans-serif;
                     text-align: center;
                     color: $prussian;
-                    padding: 10px 0;
+                    // padding-top: -10px;
+                    padding-bottom: 10px;
 
                     @include md {
                         text-align: left;
                         font-size: rem-calc(30);
+                        padding-bottom: 15px;
                        
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(40);
                     }
                 }
 
@@ -98,8 +105,11 @@
 
                     @include md{
                         font-size: rem-calc(18);
-                        padding-bottom: 10px; 
-                        padding-bottom: 50px;
+                        padding-bottom: 45px;
+                    }
+
+                    @include lg{
+                        padding-bottom: 10px;
                     }
 
                 }
