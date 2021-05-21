@@ -35,15 +35,15 @@
 
         .guide {
 
-            background-color: $prussian;
+            background-color: $ocean;
             height: 8px;
             width: 60%;
-            margin-top: 5px;
             margin-left: 20%;
 
             @include md {
                 width: 100%;
                 margin-left: 0px;
+                height: 15px;
             }
 
             >div {
@@ -56,7 +56,7 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". glance-content .";
-            padding-bottom: 60px;
+            padding-bottom: 40px;
 
             >div {
                 grid-area: glance-content;
@@ -69,35 +69,60 @@
 
                     @include md {
                         text-align: left;
+                        font-size: rem-calc(30);
                     }
                 }
 
                 p{
                     color: $rock;
+                    line-height: 24px;
+                    font-weight: 300;
+
+                    @include md{
+                        font-size: rem-calc(18);
+                    }
 
                 }
 
                 p2 {
                     display: none;
 
+                    @include md{
+                        font-size: rem-calc(18);
+                    }
+
                     @include lg {
                         display: contents;
                         color: $rock;
+                        line-height: 24px;
+                    font-weight: 300;
                     }
                 }
 
                 p3 {
                     display: none;
 
+                    @include md{
+                        font-size: rem-calc(18);
+                    }
+
                     @include lg {
                         display: contents;
                         color: $rock;
+                        line-height: 24px;
+                    font-weight: 300;
                     }
                 }
 
-                >div{
+                >div{ 
+                    display: flex;
+                        justify-content: flex-end;
                     .green-button{
-                        
+                       margin-top: 10px;
+
+                       @include lg{
+                           display: none;
+                       }
                     }
                 }
 
