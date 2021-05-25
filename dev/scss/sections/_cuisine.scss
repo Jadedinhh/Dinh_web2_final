@@ -1,6 +1,11 @@
 #cuisine {
 
     margin-bottom: 64px;
+
+    @include md{
+        margin-bottom: 78px;
+    }
+    
     >div {
         grid-area: cuisine;
 

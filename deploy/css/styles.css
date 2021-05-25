@@ -950,6 +950,11 @@ footer > div #subscribe {
 #cuisine {
   margin-bottom: 64px;
 }
+@media (min-width: 768px) {
+  #cuisine {
+    margin-bottom: 78px;
+  }
+}
 #cuisine > div {
   grid-area: cuisine;
 }
