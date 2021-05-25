@@ -967,12 +967,12 @@ footer > div #subscribe {
 }
 #cuisine > div > div ul {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: repeat(2, 1rl);
   grid-template-areas: "streetfood coffee";
 }
 @media (min-width: 768px) {
   #cuisine > div > div ul {
-    gap: 7px;
+    gap: 12px;
     grid-area: dishes;
   }
 }
@@ -988,6 +988,26 @@ footer > div #subscribe {
 }
 #cuisine > div > div ul li section > div {
   grid-area: cuisine-content;
+}
+#cuisine > div > div ul li section > div h4 {
+  font-family: "Sora", sans-serif;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  #cuisine > div > div ul li section > div h4 {
+    color: #1E555C;
+    margin: 6px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #cuisine > div > div ul li section > div h4 {
+    font-size: 1.4375rem;
+  }
+}
+#cuisine > div > div ul li section > div P {
+  color: #414B3F;
+  font-weight: 300;
+  line-height: 24px;
 }
 #cuisine > div > div ul #streetfood p {
   display: none;
@@ -1007,6 +1027,9 @@ footer > div #subscribe {
     grid-area: coffee;
   }
 }
+#cuisine > div #cuisine-intro {
+  margin-bottom: 15px;
+}
 @media (min-width: 768px) {
   #cuisine > div #cuisine-intro {
     background-image: url("../img/cuisine/pun.jpg");
@@ -1015,10 +1038,19 @@ footer > div #subscribe {
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  #cuisine > div #cuisine-intro {
+    height: 500px;
   }
 }
 #cuisine > div #cuisine-intro > div h1 {
   text-align: center;
+  color: #003049;
+  font-family: "Sora", sans-serif;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   #cuisine > div #cuisine-intro > div h1 {
@@ -1028,7 +1060,10 @@ footer > div #subscribe {
   }
 }
 #cuisine > div #cuisine-intro > div p {
-  padding-left: 16px;
+  padding: 0 16px;
+  color: #414B3F;
+  font-weight: 300;
+  line-height: 24px;
 }
 @media (min-width: 768px) {
   #cuisine > div #cuisine-intro > div p {
