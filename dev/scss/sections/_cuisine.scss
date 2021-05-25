@@ -40,13 +40,13 @@
                         >div {
                             grid-area: cuisine-content;
 
-                            img{
-                                display: none;
-                            }
+                           
 
                             h4{
                                 font-family: 'Sora', sans-serif;
                                 font-size: rem-calc(18);
+                                text-align: center;
+                                color: white;
 
                                 @include md{
                                     color: $ocean;
@@ -75,9 +75,20 @@
 
                 #streetfood {
                     background-image: url("../img/cuisine/cha-ca.jpg");
-                    height: 170px;
+                    height: 200px;
                     background-size: cover;
                     background-position: center;
+
+                    img{
+                        display: none;
+                    }
+
+                    @include md{
+                        background-image: none;
+                        img{
+                            display: list-item;
+                        }
+                    }
                     
                     p {
                         display: none;
@@ -90,6 +101,22 @@
                 }
 
                 #coffee {
+                    background-image: url("../img/cuisine/note-coffee.jpg");
+                    height: 200px;
+                    background-size: cover;
+                    background-position: center;
+
+                    img{
+                        display: none;
+                    }
+
+
+                    @include md{
+                        background-image: none;
+                        img{
+                            display: list-item;
+                        }
+                    }
                     p {
                         display: none;
 

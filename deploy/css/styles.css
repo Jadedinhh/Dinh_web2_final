@@ -989,12 +989,11 @@ footer > div #subscribe {
 #cuisine > div > div ul li section > div {
   grid-area: cuisine-content;
 }
-#cuisine > div > div ul li section > div img {
-  display: none;
-}
 #cuisine > div > div ul li section > div h4 {
   font-family: "Sora", sans-serif;
   font-size: 1.125rem;
+  text-align: center;
+  color: white;
 }
 @media (min-width: 768px) {
   #cuisine > div > div ul li section > div h4 {
@@ -1014,8 +1013,20 @@ footer > div #subscribe {
 }
 #cuisine > div > div ul #streetfood {
   background-image: url("../img/cuisine/cha-ca.jpg");
-  height: 170px;
+  height: 200px;
   background-size: cover;
+  background-position: center;
+}
+#cuisine > div > div ul #streetfood img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cuisine > div > div ul #streetfood {
+    background-image: none;
+  }
+  #cuisine > div > div ul #streetfood img {
+    display: list-item;
+  }
 }
 #cuisine > div > div ul #streetfood p {
   display: none;
@@ -1024,6 +1035,23 @@ footer > div #subscribe {
   #cuisine > div > div ul #streetfood p {
     display: list-item;
     grid-area: streetfood;
+  }
+}
+#cuisine > div > div ul #coffee {
+  background-image: url("../img/cuisine/note-coffee.jpg");
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+#cuisine > div > div ul #coffee img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cuisine > div > div ul #coffee {
+    background-image: none;
+  }
+  #cuisine > div > div ul #coffee img {
+    display: list-item;
   }
 }
 #cuisine > div > div ul #coffee p {
