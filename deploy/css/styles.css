@@ -989,6 +989,9 @@ footer > div #subscribe {
 #cuisine > div > div ul li section > div {
   grid-area: cuisine-content;
 }
+#cuisine > div > div ul li section > div img {
+  display: none;
+}
 #cuisine > div > div ul li section > div h4 {
   font-family: "Sora", sans-serif;
   font-size: 1.125rem;
@@ -1008,6 +1011,11 @@ footer > div #subscribe {
   color: #414B3F;
   font-weight: 300;
   line-height: 24px;
+}
+#cuisine > div > div ul #streetfood {
+  background-image: url("../img/cuisine/cha-ca.jpg");
+  height: 170px;
+  background-size: cover;
 }
 #cuisine > div > div ul #streetfood p {
   display: none;

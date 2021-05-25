@@ -40,6 +40,10 @@
                         >div {
                             grid-area: cuisine-content;
 
+                            img{
+                                display: none;
+                            }
+
                             h4{
                                 font-family: 'Sora', sans-serif;
                                 font-size: rem-calc(18);
@@ -70,6 +74,11 @@
 
 
                 #streetfood {
+                    background-image: url("../img/cuisine/cha-ca.jpg");
+                    height: 170px;
+                    background-size: cover;
+                    background-position: center;
+                    
                     p {
                         display: none;
 
