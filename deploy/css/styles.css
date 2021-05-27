@@ -1549,12 +1549,21 @@ footer > div #subscribe form button:hover {
   #human > div > div #gallery ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h3 h1" "h2 h1" "h5 h4";
+    grid-template-areas: "h3 h1" "h3 h1" "h2 h1" "h2 h1" "h5 h1" "h5 h4";
+    gap: 7px;
   }
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h1 {
+    background-image: url("../img/human/thanh-long.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 370px;
     grid-area: h1;
+  }
+  #human > div > div #gallery ul #h1 img {
+    display: none;
   }
 }
 #human > div > div #gallery ul #h2 {
@@ -1562,6 +1571,9 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/human/kids.jpg");
     display: list-item;
     grid-area: h2;
   }
@@ -1573,6 +1585,9 @@ footer > div #subscribe form button:hover {
   #human > div > div #gallery ul #h3 {
     display: list-item;
     grid-area: h3;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/human/ta-hien.jpg");
   }
 }
 #human > div > div #gallery ul #h4 {
@@ -1580,8 +1595,13 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h4 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/human/got-su-hao.png");
     display: list-item;
     grid-area: h4;
+    display: grid;
+    grid-template-rows: 100px;
   }
 }
 #human > div > div #gallery ul #h5 {
@@ -1589,6 +1609,9 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h5 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/human/xich-lo-2.jpg");
     display: list-item;
     grid-area: h5;
   }

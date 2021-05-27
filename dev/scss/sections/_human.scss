@@ -114,9 +114,7 @@
                               justify-content: left;
                               margin-top: 15px;
                           }
-                        button{
-                          
-                    }
+                      
                     }
 
                     
@@ -135,15 +133,28 @@
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                     grid-template-areas: "h3 h1"
+                                         "h3 h1"
                                          "h2 h1"
+                                         "h2 h1"
+                                         "h5 h1"
                                          "h5 h4";
+                    gap: 7px;
                 }
                 li{
 
                 }
                 #h1{
+                   
                     @include lg{
+                         background-image: url("../img/human/thanh-long.jpg");
+                         background-position: center;
+                         background-size: cover;
+                         display: grid;
+                         grid-template-rows: 370px;
                         grid-area: h1;
+                        img{
+                            display: none;
+                        }
                     }
                 }
 
@@ -151,6 +162,9 @@
                     display: none;
 
                     @include lg{
+                        background-position: center;
+                         background-size: cover;
+                        background-image: url("../img/human/kids.jpg");
                         display: list-item;
                         grid-area: h2;
                     }
@@ -162,20 +176,31 @@
                     @include lg{
                         display: list-item;
                         grid-area: h3;
+                        background-position: center;
+                         background-size: cover;
+                        background-image: url("../img/human/ta-hien.jpg");
                     }
                 }
 
                 #h4{
                     display: none;
                     @include lg{
+                        background-position: center;
+                        background-size: cover;
+                       background-image: url("../img/human/got-su-hao.png");
                         display: list-item;
                         grid-area: h4;
+                        display: grid;
+                        grid-template-rows: 100px;
                     }
                 }
 
                 #h5{
                     display: none;
                     @include lg{
+                        background-position: center;
+                        background-size: cover;
+                        background-image: url("../img/human/xich-lo-2.jpg");
                         display: list-item;
                         grid-area: h5;
                     }
