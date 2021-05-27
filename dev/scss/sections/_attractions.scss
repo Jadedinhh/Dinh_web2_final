@@ -2,17 +2,19 @@
     margin-bottom: 64px;
 
     @include md {
-        // grid-template-rows: ;
+        
         background-image: url("../img/attraction/cot-dien.svg");
-        background-position: left;
+        background-position: right;
         background-size: cover;
         display: grid;
         grid-template-areas: ". attractions .";
-        grid-template-columns: 16px auto 16px;
+        margin-bottom: 0;
+        padding: 78px 0;
+       
     }
 
     @include lg {
-        grid-template-columns: auto 900px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     @include xl {
@@ -27,9 +29,30 @@
             grid-area: attractions;
         }
 
-        ul {
-            @include md {
+        >div{
+
+            @include md{
                 display: grid;
+                grid-template-columns: auto 90% auto;
+                grid-template-areas: ". attractions-list .";
+            }
+
+            @include xl {
+                grid-template-columns: 0px auto 0px;
+            }
+
+              ul {
+
+             display: grid;
+             grid-template-areas: "a1"
+                                  "a3"
+                                  "a5"
+                                  "a6"
+                                  "a2"
+                                  "a4";
+
+            @include md {
+                grid-area: attractions-list;
                 gap: 60px;
                 grid-template-areas: "a1 a2"
                     "a3 a4"
@@ -39,7 +62,7 @@
 
             @include lg {
                 gap: 16px;
-                grid-area: attraction-list;
+                grid-area: attractions-list;
             }
 
             @include xl {
@@ -64,7 +87,8 @@
                 }
             }
 
-            #a1 {
+            #a1 { 
+                grid-area: a1;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -84,12 +108,13 @@
                         font-size: rem-calc(17);
                     }
                 }
-                @include md {
-                    grid-area: a1;
-                }
+               
+                   
+                
             }
 
-            #a2 {
+            #a2 { 
+                grid-area: a2;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -109,12 +134,13 @@
                         font-size: rem-calc(17);
                     }
                 }
-                @include md {
-                    grid-area: a2;
-                }
+              
+                   
+                
             }
 
-            #a3 {
+            #a3 { 
+                grid-area: a3;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -134,12 +160,13 @@
                         font-size: rem-calc(17);
                     }
                 }
-                @include md {
-                    grid-area: a3;
-                }
+               
+                   
+                
             }
 
             #a4 {
+                grid-area: a4;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -159,12 +186,11 @@
                         font-size: rem-calc(17);
                     }
                 }
-                @include md {
-                    grid-area: a4;
-                }
+                
             }
 
-            #a5 {
+            #a5 { 
+                grid-area: a5;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -184,12 +210,11 @@
                         font-size: rem-calc(17);
                     }
                 }
-                @include md {
-                    grid-area: a5;
-                }
+            
             }
 
             #a6 {
+                grid-area: a6;
                 h3{
                     color: $ocean;
                    font-family: 'Sora', sans-serif;
@@ -210,13 +235,37 @@
                     }
                 }
                 padding-bottom: 50px;
-                @include md {
-                    grid-area: a6;
-                }
+                
             }
         }
+        }
+
+      
         #attractions-intro {
-        h1 {
+             @include md{
+                 display: grid;
+                 grid-template-columns: 16px auto 16px;
+                 grid-template-areas: ". attraction-intro .";
+                 padding-bottom: 21px;
+                 width: 60%;
+
+             }
+
+             @include lg{
+                 padding-bottom: 40px;
+             }
+
+             @include xl{
+                 grid-template-columns: 0 auto 0;
+             }
+
+         >div{
+
+            @include md{
+                grid-area: attraction-intro;
+            }
+
+             h1 {
             color: $prussian;
             font-family: 'Sora', sans-serif;
             padding: 30px 0;
@@ -224,6 +273,8 @@
 
             @include md {
                 text-align: left;
+                
+                
             }
 
             @include lg{
@@ -236,17 +287,22 @@
 
             @include md {
                 display: contents;
-                width: 20%;
+                color: $rock;
+                line-height: 24px;
+                font-weight: 300;
+              
             }
 
             @include lg {
-                width: 40%;
+               font-size: rem-calc(17);
             }
 
             @include xl {
                 width: 75%;
             }
         }
+         }
+        
     }
     }
 

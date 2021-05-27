@@ -748,16 +748,17 @@ footer > div #subscribe form button:hover {
 @media (min-width: 768px) {
   #attractions {
     background-image: url("../img/attraction/cot-dien.svg");
-    background-position: left;
+    background-position: right;
     background-size: cover;
     display: grid;
     grid-template-areas: ". attractions .";
-    grid-template-columns: 16px auto 16px;
+    margin-bottom: 0;
+    padding: 78px 0;
   }
 }
 @media (min-width: 1024px) {
   #attractions {
-    grid-template-columns: auto 900px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 @media (min-width: 1200px) {
@@ -775,231 +776,259 @@ footer > div #subscribe form button:hover {
   }
 }
 @media (min-width: 768px) {
-  #attractions > div ul {
+  #attractions > div > div {
     display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: ". attractions-list .";
+  }
+}
+@media (min-width: 1200px) {
+  #attractions > div > div {
+    grid-template-columns: 0px auto 0px;
+  }
+}
+#attractions > div > div ul {
+  display: grid;
+  grid-template-areas: "a1" "a3" "a5" "a6" "a2" "a4";
+}
+@media (min-width: 768px) {
+  #attractions > div > div ul {
+    grid-area: attractions-list;
     gap: 60px;
     grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  #attractions > div ul {
+  #attractions > div > div ul {
     gap: 16px;
-    grid-area: attraction-list;
+    grid-area: attractions-list;
   }
 }
 @media (min-width: 1200px) {
-  #attractions > div ul {
+  #attractions > div > div ul {
     gap: 100px;
   }
 }
-#attractions > div ul li {
+#attractions > div > div ul li {
   padding-bottom: 24px;
 }
-#attractions > div ul li section {
+#attractions > div > div ul li section {
   display: grid;
   grid-template-areas: ". attractions-content .";
   grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 768px) {
-  #attractions > div ul li section {
+  #attractions > div > div ul li section {
     grid-template-columns: 0px auto 0px;
   }
 }
-#attractions > div ul li section > div {
+#attractions > div > div ul li section > div {
   grid-area: attractions-content;
 }
-#attractions > div ul #a1 h3 {
+#attractions > div > div ul #a1 {
+  grid-area: a1;
+}
+#attractions > div > div ul #a1 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a1 h3 {
+  #attractions > div > div ul #a1 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a1 p {
+#attractions > div > div ul #a1 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a1 p {
+  #attractions > div > div ul #a1 p {
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 768px) {
-  #attractions > div ul #a1 {
-    grid-area: a1;
-  }
+#attractions > div > div ul #a2 {
+  grid-area: a2;
 }
-#attractions > div ul #a2 h3 {
+#attractions > div > div ul #a2 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a2 h3 {
+  #attractions > div > div ul #a2 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a2 p {
+#attractions > div > div ul #a2 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a2 p {
+  #attractions > div > div ul #a2 p {
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 768px) {
-  #attractions > div ul #a2 {
-    grid-area: a2;
-  }
+#attractions > div > div ul #a3 {
+  grid-area: a3;
 }
-#attractions > div ul #a3 h3 {
+#attractions > div > div ul #a3 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a3 h3 {
+  #attractions > div > div ul #a3 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a3 p {
+#attractions > div > div ul #a3 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a3 p {
+  #attractions > div > div ul #a3 p {
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 768px) {
-  #attractions > div ul #a3 {
-    grid-area: a3;
-  }
+#attractions > div > div ul #a4 {
+  grid-area: a4;
 }
-#attractions > div ul #a4 h3 {
+#attractions > div > div ul #a4 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a4 h3 {
+  #attractions > div > div ul #a4 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a4 p {
+#attractions > div > div ul #a4 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a4 p {
+  #attractions > div > div ul #a4 p {
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 768px) {
-  #attractions > div ul #a4 {
-    grid-area: a4;
-  }
+#attractions > div > div ul #a5 {
+  grid-area: a5;
 }
-#attractions > div ul #a5 h3 {
+#attractions > div > div ul #a5 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a5 h3 {
+  #attractions > div > div ul #a5 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a5 p {
+#attractions > div > div ul #a5 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a5 p {
+  #attractions > div > div ul #a5 p {
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 768px) {
-  #attractions > div ul #a5 {
-    grid-area: a5;
-  }
-}
-#attractions > div ul #a6 {
+#attractions > div > div ul #a6 {
+  grid-area: a6;
   padding-bottom: 50px;
 }
-#attractions > div ul #a6 h3 {
+#attractions > div > div ul #a6 h3 {
   color: #1E555C;
   font-family: "Sora", sans-serif;
   padding: 10px 0;
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a6 h3 {
+  #attractions > div > div ul #a6 h3 {
     font-size: 1.4375rem;
   }
 }
-#attractions > div ul #a6 p {
+#attractions > div > div ul #a6 p {
   color: #414B3F;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  #attractions > div ul #a6 p {
+  #attractions > div > div ul #a6 p {
     font-size: 1.0625rem;
   }
 }
 @media (min-width: 768px) {
-  #attractions > div ul #a6 {
-    grid-area: a6;
+  #attractions > div #attractions-intro {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". attraction-intro .";
+    padding-bottom: 21px;
+    width: 60%;
   }
 }
-#attractions > div #attractions-intro h1 {
+@media (min-width: 1024px) {
+  #attractions > div #attractions-intro {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #attractions > div #attractions-intro {
+    grid-template-columns: 0 auto 0;
+  }
+}
+@media (min-width: 768px) {
+  #attractions > div #attractions-intro > div {
+    grid-area: attraction-intro;
+  }
+}
+#attractions > div #attractions-intro > div h1 {
   color: #003049;
   font-family: "Sora", sans-serif;
   padding: 30px 0;
   text-align: center;
 }
 @media (min-width: 768px) {
-  #attractions > div #attractions-intro h1 {
+  #attractions > div #attractions-intro > div h1 {
     text-align: left;
   }
 }
 @media (min-width: 1024px) {
-  #attractions > div #attractions-intro h1 {
+  #attractions > div #attractions-intro > div h1 {
     font-size: 2.5rem;
   }
 }
-#attractions > div #attractions-intro p {
+#attractions > div #attractions-intro > div p {
   display: none;
 }
 @media (min-width: 768px) {
-  #attractions > div #attractions-intro p {
+  #attractions > div #attractions-intro > div p {
     display: contents;
-    width: 20%;
+    color: #414B3F;
+    line-height: 24px;
+    font-weight: 300;
   }
 }
 @media (min-width: 1024px) {
-  #attractions > div #attractions-intro p {
-    width: 40%;
+  #attractions > div #attractions-intro > div p {
+    font-size: 1.0625rem;
   }
 }
 @media (min-width: 1200px) {
-  #attractions > div #attractions-intro p {
+  #attractions > div #attractions-intro > div p {
     width: 75%;
   }
 }
