@@ -74,7 +74,7 @@
 
                 #streetfood {
                       background-image: url("../img/cuisine/cha-ca.jpg");
-                            background-position: center;
+                            background-position: right;
                             background-size: cover;
                       
 
@@ -175,17 +175,33 @@
                 height: 500px;
             }
 
+            @include xl{
+               display: grid;
+               grid-template-columns: auto 1000px auto;
+               grid-template-areas: ". intro-content .";
+               
+              
+            }
+
             >div {
+                @include xl{
+                    grid-area: intro-content;
+                }
+
                 h1 {
                     color: $prussian;
                     font-family: 'Sora', sans-serif;
-                    padding-bottom: 10px;
+                    padding-bottom: 5px;
                     text-align: center;
 
                     @include md {
                         color: $white;
                         padding-left: 16px;
                         text-align: left;
+                    }
+
+                    @include xl{
+                        padding-left: 0;
                     }
                 }
 
@@ -202,6 +218,11 @@
 
                     @include lg {
                         width: 40%;
+                        padding-bottom: 5px;
+                    }
+
+                    @include xl{
+                        padding-left: 0;
                     }
                 }
             }

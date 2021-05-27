@@ -1106,7 +1106,7 @@ footer > div #subscribe form button:hover {
 }
 #cuisine > div > div ul #streetfood {
   background-image: url("../img/cuisine/cha-ca.jpg");
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
 #cuisine > div > div ul #streetfood img {
@@ -1199,10 +1199,22 @@ footer > div #subscribe form button:hover {
     height: 500px;
   }
 }
+@media (min-width: 1200px) {
+  #cuisine > div #cuisine-intro {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". intro-content .";
+  }
+}
+@media (min-width: 1200px) {
+  #cuisine > div #cuisine-intro > div {
+    grid-area: intro-content;
+  }
+}
 #cuisine > div #cuisine-intro > div h1 {
   color: #003049;
   font-family: "Sora", sans-serif;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1210,6 +1222,11 @@ footer > div #subscribe form button:hover {
     color: #fff;
     padding-left: 16px;
     text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #cuisine > div #cuisine-intro > div h1 {
+    padding-left: 0;
   }
 }
 #cuisine > div #cuisine-intro > div p {
@@ -1227,6 +1244,12 @@ footer > div #subscribe form button:hover {
 @media (min-width: 1024px) {
   #cuisine > div #cuisine-intro > div p {
     width: 40%;
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  #cuisine > div #cuisine-intro > div p {
+    padding-left: 0;
   }
 }
 
