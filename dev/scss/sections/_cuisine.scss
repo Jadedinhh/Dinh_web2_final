@@ -23,6 +23,7 @@
                 display: grid;
                 grid-template-areas: "streetfood coffee";
                 grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 600px;
 
                 @include md {
                     gap: 12px;
@@ -112,7 +113,7 @@
                             background-image: url("../img/cuisine/note-coffee.jpg");
                             background-position: center;
                             background-size: cover;
-                            height: 200px;
+                            
                         }
                     }
 
