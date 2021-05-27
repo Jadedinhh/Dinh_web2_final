@@ -1428,8 +1428,8 @@ footer > div #subscribe form button:hover {
 @media (min-width: 768px) {
   #human {
     display: grid;
-    grid-template-columns: auto 600px auto;
     grid-template-areas: ". human .";
+    grid-template-columns: auto 600px auto;
   }
 }
 @media (min-width: 1024px) {
@@ -1458,9 +1458,9 @@ footer > div #subscribe form button:hover {
 @media (min-width: 768px) {
   #human > div > div {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "info gallery";
     gap: 18px;
+    grid-template-areas: "info gallery";
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1024px) {
@@ -1470,27 +1470,27 @@ footer > div #subscribe form button:hover {
 }
 #human > div > div #info {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". human-content .";
+  grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 768px) {
   #human > div > div #info {
-    grid-template-columns: 0 auto 0;
     grid-area: info;
+    grid-template-columns: 0 auto 0;
   }
 }
 #human > div > div #info > div {
   grid-area: human-content;
 }
 #human > div > div #info > div h1 {
+  color: #003049;
   font-family: "Sora", sans-serif;
   padding: 17px 0;
-  color: #003049;
 }
 @media (min-width: 768px) {
   #human > div > div #info > div h1 {
-    padding: 0;
     font-size: 1.875rem;
+    padding: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1500,9 +1500,9 @@ footer > div #subscribe form button:hover {
   }
 }
 #human > div > div #info > div p {
+  color: #414B3F;
   font-weight: 300;
   line-height: 24px;
-  color: #414B3F;
 }
 @media (min-width: 768px) {
   #human > div > div #info > div p {
@@ -1519,10 +1519,10 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 768px) {
   #human > div > div #info > div p2 {
+    color: #414B3F;
     display: contents;
     font-weight: 300;
     line-height: 24px;
-    color: #414B3F;
   }
 }
 @media (min-width: 1024px) {
@@ -1548,9 +1548,9 @@ footer > div #subscribe form button:hover {
 @media (min-width: 1024px) {
   #human > div > div #gallery ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "h3 h1" "h3 h1" "h2 h1" "h2 h1" "h5 h1" "h5 h4";
     gap: 7px;
+    grid-template-areas: "h3 h1" "h3 h1" "h2 h1" "h2 h1" "h5 h1" "h5 h4";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
@@ -1559,8 +1559,8 @@ footer > div #subscribe form button:hover {
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-rows: 370px;
     grid-area: h1;
+    grid-template-rows: 400px;
   }
   #human > div > div #gallery ul #h1 img {
     display: none;
@@ -1571,9 +1571,9 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h2 {
+    background-image: url("../img/human/kids.jpg");
     background-position: center;
     background-size: cover;
-    background-image: url("../img/human/kids.jpg");
     display: list-item;
     grid-area: h2;
   }
@@ -1583,11 +1583,11 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h3 {
-    display: list-item;
-    grid-area: h3;
+    background-image: url("../img/human/ta-hien.jpg");
     background-position: center;
     background-size: cover;
-    background-image: url("../img/human/ta-hien.jpg");
+    display: list-item;
+    grid-area: h3;
   }
 }
 #human > div > div #gallery ul #h4 {
@@ -1595,13 +1595,12 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h4 {
+    background-image: url("../img/human/got-su-hao.png");
     background-position: center;
     background-size: cover;
-    background-image: url("../img/human/got-su-hao.png");
-    display: list-item;
-    grid-area: h4;
     display: grid;
-    grid-template-rows: 100px;
+    grid-area: h4;
+    grid-template-rows: 130px;
   }
 }
 #human > div > div #gallery ul #h5 {
@@ -1609,9 +1608,9 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 1024px) {
   #human > div > div #gallery ul #h5 {
-    background-position: center;
-    background-size: cover;
     background-image: url("../img/human/xich-lo-2.jpg");
+    background-position: right;
+    background-size: cover;
     display: list-item;
     grid-area: h5;
   }
@@ -1619,17 +1618,17 @@ footer > div #subscribe form button:hover {
 #human > div .guide {
   background-color: #1E555C;
   height: 8px;
-  width: 60%;
-  margin-top: 5px;
-  margin-left: 20%;
   margin-bottom: 21px;
+  margin-left: 20%;
+  margin-top: 5px;
+  width: 60%;
 }
 @media (min-width: 768px) {
   #human > div .guide {
     height: 15px;
+    margin-bottom: 25px;
     margin-left: 0px;
     margin-top: 40px;
-    margin-bottom: 25px;
     width: 100%;
   }
 }
