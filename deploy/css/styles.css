@@ -477,6 +477,12 @@ footer > div #socials ul li a:visited {
   font-size: 1.25rem;
   transition: 0.25s;
 }
+@media (min-width: 1024px) {
+  footer > div #socials ul li a:link,
+footer > div #socials ul li a:visited {
+    font-size: 1.5625rem;
+  }
+}
 footer > div #socials ul li a:hover,
 footer > div #socials ul li a:active {
   color: #1E555C;
@@ -1520,6 +1526,11 @@ footer > div #subscribe form button:hover {
     grid-template-columns: 40% auto;
   }
 }
+@media (min-width: 1200px) {
+  #human > div > div {
+    grid-template-columns: 30% auto;
+  }
+}
 #human > div > div #info {
   display: grid;
   grid-template-areas: ". human-content .";
@@ -1616,6 +1627,11 @@ footer > div #subscribe form button:hover {
   }
   #human > div > div #gallery ul #h1 img {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  #human > div > div #gallery ul #h1 {
+    grid-template-rows: 500px;
   }
 }
 #human > div > div #gallery ul #h2 {

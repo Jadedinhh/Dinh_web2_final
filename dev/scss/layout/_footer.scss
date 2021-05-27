@@ -50,6 +50,10 @@ footer{
                         color: $white;
                         font-size: rem-calc(20);
                         transition: 0.25s;
+
+                        @include lg{
+                            font-size: rem-calc(25);
+                        }
                     }
 
                     a:hover,

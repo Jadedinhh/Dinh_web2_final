@@ -40,6 +40,10 @@
                 grid-template-columns: 40% auto;
             }
 
+            @include xl{
+                grid-template-columns: 30% auto;
+            }
+
             #info {
                 display: grid;
                 grid-template-areas: ". human-content .";
@@ -143,6 +147,10 @@
                             img {
                                 display: none;
                             }
+                        }
+
+                        @include xl{
+                            grid-template-rows: 500px;
                         }
                     }
 
