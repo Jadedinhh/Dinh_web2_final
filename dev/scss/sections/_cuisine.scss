@@ -1,8 +1,8 @@
 #cuisine {
-    margin-bottom: 64px;
+    padding-bottom: 98px;
 
     @include md {
-        margin-bottom: 3000px;
+        margin-bottom: 300px;
     }
 
     >div {
@@ -23,7 +23,8 @@
                 display: grid;
                 grid-template-areas: "streetfood coffee";
                 grid-template-columns: repeat(2,1fr);
-                grid-template-rows: 600px;
+                grid-template-rows: 170px;
+                
 
                 @include md {
                     gap: 12px;
@@ -52,6 +53,7 @@
 
                                 @include md {
                                     color: $ocean;
+                                    text-align: left;
                                 }
 
                                 @include lg {
@@ -66,24 +68,15 @@
                             }
                         }
                     }
-
-                    aside {
-                        button {
-                            display: block;
-                        }
-                    }
+                   
+                
                 }
 
                 #streetfood {
-
-                    >section {
-                        >div {
-                            background-image: url("../img/cuisine/cha-ca.jpg");
+                      background-image: url("../img/cuisine/cha-ca.jpg");
                             background-position: center;
                             background-size: cover;
-                        
-                        }
-                    }
+                      
 
                     img {
                         display: none;
@@ -105,17 +98,28 @@
                             grid-area: streetfood;
                         }
                     }
+
+                    aside {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        button {
+                            margin-top: 144px;
+
+                            @include md{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
                 }
 
                 #coffee {
-                    section {
-                        >div {
-                            background-image: url("../img/cuisine/note-coffee.jpg");
+                    
+                    background-image: url("../img/cuisine/note-coffee.jpg");
                             background-position: center;
                             background-size: cover;
                             
-                        }
-                    }
+                        
 
                     img {
                         display: none;
@@ -135,6 +139,19 @@
                         @include md {
                             display: list-item;
                             grid-area: coffee;
+                        }
+                    }
+
+                    aside {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        button {
+                            margin-top: 144px;
+
+                            @include md{
+                                margin-top: 35px;
+                            }
                         }
                     }
                 }
