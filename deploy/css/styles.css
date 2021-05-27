@@ -1160,7 +1160,7 @@ footer > div #subscribe {
     background-position: top;
     background-size: cover;
     grid-template-rows: 200px;
-    padding: 100px 0 150px 0;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1221,8 +1221,13 @@ footer > div #subscribe {
 }
 @media (min-width: 768px) {
   #quote-bottom {
-    height: 200px;
+    height: 250px;
     background-color: #C7D1D6;
+  }
+}
+@media (min-width: 1024px) {
+  #quote-bottom {
+    height: 400px;
   }
 }
 
@@ -1240,7 +1245,7 @@ footer > div #subscribe {
 @media (min-width: 1024px) {
   #tips {
     grid-template-columns: auto 900px auto;
-    margin-top: -300px;
+    margin-top: -350px;
   }
 }
 @media (min-width: 1200px) {
@@ -1290,6 +1295,11 @@ footer > div #subscribe {
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  #tips > div ul li section > div h4 {
+    font-size: 1.4375rem;
+  }
+}
 #tips > div ul li section > div p {
   color: #414B3F;
   font-weight: 300;
@@ -1299,6 +1309,12 @@ footer > div #subscribe {
 @media (min-width: 768px) {
   #tips > div ul li section > div p {
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #tips > div ul li section > div p {
+    font-size: 1.0625rem;
+    margin-bottom: 25px;
   }
 }
 #tips > div ul li section > div .tipz {

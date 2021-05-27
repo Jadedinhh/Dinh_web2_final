@@ -1,5 +1,6 @@
 #tips{
     margin-bottom: 64px;
+
     @include md{
         display: grid;
         grid-template-columns: auto 600px auto;
@@ -12,7 +13,7 @@
 
     @include lg{
         grid-template-columns: auto 900px auto;
-        margin-top: -300px;
+        margin-top: -350px;
     }
 
     @include xl{
@@ -55,8 +56,14 @@
                         font-size: rem-calc(18);
                         font-family: 'Sora', sans-serif;
                         padding-bottom: 9px;
+
                         @include md{
                             text-align: left;
+                            
+                        }
+
+                        @include lg{
+                            font-size: rem-calc(23);
                         }
                     }
 
@@ -68,6 +75,11 @@
 
                        @include md{
                            margin-bottom: 10px;
+                       }
+
+                       @include lg{
+                           font-size: rem-calc(17);
+                           margin-bottom: 25px;
                        }
                     }
 
@@ -95,6 +107,7 @@
 
                             i{
                                 color: $smoked-blue;
+                                
                             }
 
                             p{
