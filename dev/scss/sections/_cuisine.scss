@@ -9,6 +9,8 @@
         grid-area: cuisine;
 
         >div {
+
+           
             @include md {
                 display: grid;
                 grid-template-areas: ". dishes .";
@@ -32,6 +34,8 @@
                 }
 
                 li {
+
+                    
                     section {
                         display: grid;
                         grid-template-areas: ". cuisine-content .";
