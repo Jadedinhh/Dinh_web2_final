@@ -5,6 +5,7 @@
         display: grid;
         grid-template-areas: ". human .";
         grid-template-columns: auto 600px auto;
+        margin-bottom: 77px;
     }
 
     @include lg {
@@ -40,7 +41,7 @@
                 grid-template-columns: 40% auto;
             }
 
-            @include xl{
+            @include xl {
                 grid-template-columns: 30% auto;
             }
 
@@ -58,7 +59,6 @@
                     grid-area: human-content;
 
                     h1 {
-                        // font-size: rem-calc(20);
                         color: $prussian;
                         font-family: 'Sora', sans-serif;
                         padding: 17px 0;
@@ -149,7 +149,7 @@
                             }
                         }
 
-                        @include xl{
+                        @include xl {
                             grid-template-rows: 500px;
                         }
                     }
@@ -224,6 +224,10 @@
 
             @include lg {
                 margin-bottom: 50px;
+            }
+
+            @include xl{
+                margin-bottom: 60px;
             }
 
             >div {
