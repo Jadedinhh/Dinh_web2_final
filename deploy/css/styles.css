@@ -404,7 +404,7 @@ a {
   padding: 6px;
 }
 .green-button:hover {
-  background-color: #414B3F;
+  background-color: #1E555C;
   color: #fff;
   cursor: pointer;
 }
@@ -552,9 +552,12 @@ footer > div #subscribe form button:hover {
   }
 }
 #hero > div #hero-image i {
-  color: #EAE2B7;
-  cursor: pointer;
+  color: #FFBF00;
   font-size: 3.125rem;
+}
+#hero > div #hero-image i:hover {
+  color: #fff;
+  cursor: pointer;
 }
 #hero > div #hero-content {
   display: grid;
@@ -589,6 +592,12 @@ footer > div #subscribe form button:hover {
 @media (min-width: 1024px) {
   #hero > div #hero-content > div h1 {
     font-size: 2.5rem;
+    padding: 15px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #hero > div #hero-content > div h1 {
+    padding: 20px 0;
   }
 }
 #hero > div #hero-content > div p {
