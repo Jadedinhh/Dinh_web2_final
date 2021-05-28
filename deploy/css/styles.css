@@ -467,6 +467,7 @@ footer > div #socials {
 footer > div #socials ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 footer > div #socials ul li {
   margin: 0 5px;
@@ -493,6 +494,7 @@ footer > div #subscribe {
 }
 footer > div #subscribe form input {
   font-family: "Sora", sans-serif;
+  color: #1E555C;
   border: none;
   border-radius: 40px;
   font-size: 0.875rem;
@@ -628,6 +630,11 @@ footer > div #subscribe form button:hover {
     grid-template-columns: auto 900px auto;
   }
 }
+@media (min-width: 1200px) {
+  #glance {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 @media (min-width: 768px) {
   #glance > div {
     grid-area: glance;
@@ -644,6 +651,11 @@ footer > div #subscribe form button:hover {
 @media (min-width: 1024px) {
   #glance > div > div {
     grid-template-rows: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  #glance > div > div {
+    grid-template-rows: 600px;
   }
 }
 #glance > div > div aside {
@@ -686,6 +698,7 @@ footer > div #subscribe form button:hover {
   grid-area: glance-content;
 }
 #glance > div #glance-content > div h1 {
+  padding-top: 10px;
   color: #003049;
   font-family: "Sora", sans-serif;
   padding-bottom: 10px;

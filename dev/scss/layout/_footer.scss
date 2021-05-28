@@ -39,6 +39,7 @@ footer{
             ul {
                 display: flex;
                 justify-content: flex-end;
+                align-items: center;
 
                 
 
@@ -71,7 +72,7 @@ footer{
             form{
                 input{
                     font-family: 'Sora', sans-serif;
-                
+                color: $ocean;
                  border: none;
                 border-radius: 40px;
                 font-size: rem-calc(14);

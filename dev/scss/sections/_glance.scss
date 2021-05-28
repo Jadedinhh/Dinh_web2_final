@@ -12,6 +12,10 @@
         grid-template-columns: auto 900px auto;
     }
 
+    @include xl {
+        grid-template-columns: auto 1000px auto;
+    }
+
     >div {
         @include md {
             grid-area: glance;
@@ -27,6 +31,10 @@
 
             @include lg {
                 grid-template-rows: 520px;
+            }
+
+            @include xl{
+                grid-template-rows: 600px;
             }
 
             aside {
@@ -72,7 +80,7 @@
                 grid-area: glance-content;
 
                 h1 {
-                    // padding-top: -10px;
+                    padding-top: 10px;
                     color: $prussian;
                     font-family: 'Sora', sans-serif;
                     padding-bottom: 10px;
