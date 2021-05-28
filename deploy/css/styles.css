@@ -1350,8 +1350,8 @@ footer > div #subscribe form button:hover {
     display: grid;
     grid-template-areas: ". tips .";
     grid-template-columns: auto 600px auto;
-    margin-top: -250px;
     margin-bottom: 78px;
+    margin-top: -250px;
   }
 }
 @media (min-width: 1024px) {
@@ -1379,8 +1379,8 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 768px) {
   #tips > div > div h1 {
-    text-align: left;
     padding-bottom: 36px;
+    text-align: left;
   }
 }
 #tips > div section {
@@ -1398,9 +1398,14 @@ footer > div #subscribe form button:hover {
 @media (min-width: 768px) {
   #tips > div ul {
     display: grid;
-    gap: 60px;
+    gap: 50px;
     grid-template-areas: "where how" "when restriction";
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #tips > div ul {
+    gap: 60px;
   }
 }
 #tips > div ul li section {
