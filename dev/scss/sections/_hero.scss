@@ -26,13 +26,15 @@
 
             i {
                 color: $yellow;
-                font-size: rem-calc(50);
+                font-size: rem-calc(60);
 
                 &:hover {
                     
                     color: $white;
                     cursor: pointer;
                 }
+
+                
             }
         }
 
