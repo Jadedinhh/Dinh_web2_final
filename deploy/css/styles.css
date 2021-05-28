@@ -404,8 +404,8 @@ a {
   padding: 6px;
 }
 .green-button:hover {
-  background-color: #1E555C;
-  color: #fff;
+  background-color: #FFBF00;
+  color: #1E555C;
   cursor: pointer;
 }
 
