@@ -5,8 +5,8 @@
         display: grid;
         grid-template-areas: ". tips .";
         grid-template-columns: auto 600px auto;
-        margin-top: -250px;
         margin-bottom: 78px;
+        margin-top: -250px;
     }
 
     @include lg {
@@ -32,32 +32,36 @@
                 text-align: center;
 
                 @include md {
-                    text-align: left;
                     padding-bottom: 36px;
+                    text-align: left;
                 }
             }
         }
 
-        section{
-                display: flex;
-                justify-content: center;
-               @include xl{
-                   img{
-                       width: 90%;
-                   }
-               }
-               
+        section {
+            display: flex;
+            justify-content: center;
+
+            @include xl {
+                img {
+                    width: 90%;
+                }
             }
+        }
 
         ul {
             margin-top: 30px;
 
             @include md {
                 display: grid;
-                gap: 60px;
+                gap: 50px;
                 grid-template-areas: "where how"
                     "when restriction";
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include xl {
+                gap: 60px;
             }
 
             li {
@@ -156,7 +160,5 @@
                 grid-area: restriction;
             }
         }
-
-    
     }
 }
