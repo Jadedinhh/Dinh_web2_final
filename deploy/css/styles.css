@@ -1348,9 +1348,10 @@ footer > div #subscribe form button:hover {
 @media (min-width: 768px) {
   #tips {
     display: grid;
-    grid-template-columns: auto 600px auto;
     grid-template-areas: ". tips .";
+    grid-template-columns: auto 600px auto;
     margin-top: -250px;
+    margin-bottom: 78px;
   }
 }
 @media (min-width: 1024px) {
@@ -1370,21 +1371,42 @@ footer > div #subscribe form button:hover {
     grid-area: tips;
   }
 }
+#tips > div > div h1 {
+  color: #003049;
+  font-family: "Sora", sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #tips > div > div h1 {
+    text-align: left;
+    padding-bottom: 36px;
+  }
+}
+#tips > div section {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  #tips > div section img {
+    width: 90%;
+  }
+}
 #tips > div ul {
   margin-top: 30px;
 }
 @media (min-width: 768px) {
   #tips > div ul {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "where how" "when restriction";
     gap: 60px;
+    grid-template-areas: "where how" "when restriction";
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 #tips > div ul li section {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". tips-content .";
+  grid-template-columns: 16px auto 16px;
 }
 @media (min-width: 768px) {
   #tips > div ul li section {
@@ -1395,11 +1417,11 @@ footer > div #subscribe form button:hover {
   grid-area: tips-content;
 }
 #tips > div ul li section > div h4 {
-  text-align: center;
   color: #1E555C;
-  font-size: 1.125rem;
   font-family: "Sora", sans-serif;
+  font-size: 1.125rem;
   padding-bottom: 9px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #tips > div ul li section > div h4 {
@@ -1435,15 +1457,15 @@ footer > div #subscribe form button:hover {
   #tips > div ul li section > div .tipz {
     display: flex;
     font-family: "Sora", sans-serif;
-    font-weight: 100;
     font-size: 0.875rem;
+    font-weight: 100;
   }
   #tips > div ul li section > div .tipz a:link,
 #tips > div ul li section > div .tipz a:visited {
-    transition: 0.25s;
     color: #414B3F;
     font-weight: 100;
     margin-left: 5px;
+    transition: 0.25s;
   }
   #tips > div ul li section > div .tipz a:link:hover,
 #tips > div ul li section > div .tipz a:visited:hover {
@@ -1469,17 +1491,7 @@ footer > div #subscribe form button:hover {
 #tips > div ul #restriction {
   grid-area: restriction;
 }
-#tips > div > div h1 {
-  text-align: center;
-  color: #003049;
-  font-family: "Sora", sans-serif;
-  padding-bottom: 10px;
-}
-@media (min-width: 768px) {
-  #tips > div > div h1 {
-    text-align: left;
-  }
-}
+
 #human {
   margin-bottom: 64px;
 }
