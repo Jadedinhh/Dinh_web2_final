@@ -109,9 +109,11 @@
                         justify-content: flex-end;
                         button {
                             margin-top: 144px;
+                            margin-right: 3px;
 
                             @include md{
                                 margin-top: 10px;
+                                margin-right: 0;
                             }
                         }
                     }
@@ -152,9 +154,11 @@
                         justify-content: flex-end;
                         button {
                             margin-top: 144px;
+                            margin-right: 3px;
 
                             @include md{
                                 margin-top: 35px;
+                                margin-right: 0;
                             }
                         }
                     }

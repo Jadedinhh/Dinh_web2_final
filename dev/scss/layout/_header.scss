@@ -1,25 +1,31 @@
 #header{
-    color: $white;
     // padding: 15px 0;
+    background-color: $prussian;
 
     >div {
         display: grid;
         grid-template-areas: "logo burger"
                              "nav nav";
-        grid-template-columns: 20% auto;
+        grid-template-columns: auto 20%;
 
-        @include lg {
-            grid-template-areas: "logo nav";
-            grid-template-columns: 7% auto auto;
+        @include md {
+            grid-template-areas: " logo nav";
+            grid-template-columns: 20% auto;
         }
         
         #logo-container {
             grid-area: logo;
             padding: 15px;
+            display: flex;
+            padding-left: 50%;
 
             a:link,
             a:visited {
                 transition: 0.25s;
+                color: $white;
+                font-size: rem-calc(30);
+                font-weight: 600;
+                
 
                 &:hover {
                     color: $yellow;
@@ -32,13 +38,9 @@
             display: flex;
             grid-area: burger;
             padding: 10px;
-            padding-left: 69vw;
+            color: $white;
 
-            @include md{
-                padding-left: 74.5vw;
-            }
-
-            @include lg {
+            @include md {
                 display: none !important;
             }
 
@@ -48,23 +50,29 @@
                 margin-left: auto;
 
                 &:hover {
-                    color: $white;
+                    color: $yellow;
                 }
             }
         }
 
         #nav-container {
-            background-color: $ocean;
-            color: $egg;
+            background-color: $egg;
+            color: $ocean;
             display: none;
             grid-area: nav;
-            padding: 20px 10px 10px;
+            padding: 20px 0 10px;
             text-align: right;
+            // font-size: rem-calc(20);
 
-            @include lg {
+            @include md {
                 background-color: transparent;
                 display: block !important;
             }
+
+            @include lg{
+                font-size: rem-calc(20);
+            }
+
         }
     }
 }

@@ -5,7 +5,7 @@
     ul {
         height: 100%;
 
-        @include lg {
+        @include md {
             display: flex;
             justify-content: flex-end;
         }
@@ -15,22 +15,17 @@
             // border: 1px solid red;
             text-align: right;
 
-            // @include lg {
-            //     align-items: center;
-            //     border-right: 2px solid $charcoal;
-            //     display: flex;
-            //     margin-bottom: 0px;
-            // }
 
             a:link,
             a:visited {
-                
+
                 color: $asparagus ;
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
                 
-                @include lg {
+                
+                @include md {
                     color: $white;
                 }
 
@@ -40,15 +35,6 @@
                 }
             }
         }
-
-        // li:first-child {
-        //     border: none;
-        //     display: none;
-
-        //     @include md{
-        //         display: list-item;
-        //     }
-        // }
 
         li:last-child {
             border: none;

@@ -28,9 +28,14 @@ footer{
         h1{
             grid-area: h1;
             color: $white;
+            font-weight: 600;
 
             @include md{
                font-size: rem-calc(40);
+            }
+
+            @include lg{
+                font-size: rem-calc(50);
             }
         }
         

@@ -418,7 +418,7 @@ a {
 #nav-container ul {
   height: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #nav-container ul {
     display: flex;
     justify-content: flex-end;
@@ -435,7 +435,7 @@ a {
   text-decoration: none;
   transition: 0.25s;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #nav-container ul li a:link,
 #nav-container ul li a:visited {
     color: #fff;
@@ -451,26 +451,31 @@ a {
 }
 
 #header {
-  color: #fff;
+  background-color: #003049;
 }
 #header > div {
   display: grid;
   grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 20% auto;
+  grid-template-columns: auto 20%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #header > div {
-    grid-template-areas: "logo nav";
-    grid-template-columns: 7% auto auto;
+    grid-template-areas: " logo nav";
+    grid-template-columns: 20% auto;
   }
 }
 #header > div #logo-container {
   grid-area: logo;
   padding: 15px;
+  display: flex;
+  padding-left: 50%;
 }
 #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
   transition: 0.25s;
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
 }
 #header > div #logo-container a:link:hover,
 #header > div #logo-container a:visited:hover {
@@ -481,14 +486,9 @@ a {
   display: flex;
   grid-area: burger;
   padding: 10px;
-  padding-left: 69vw;
+  color: #fff;
 }
 @media (min-width: 768px) {
-  #header > div #burger-container {
-    padding-left: 74.5vw;
-  }
-}
-@media (min-width: 1024px) {
   #header > div #burger-container {
     display: none !important;
   }
@@ -499,20 +499,25 @@ a {
   margin-left: auto;
 }
 #header > div #burger-container i:hover {
-  color: #fff;
+  color: #FFBF00;
 }
 #header > div #nav-container {
-  background-color: #1E555C;
-  color: #EAE2B7;
+  background-color: #EAE2B7;
+  color: #1E555C;
   display: none;
   grid-area: nav;
-  padding: 20px 10px 10px;
+  padding: 20px 0 10px;
   text-align: right;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #header > div #nav-container {
     background-color: transparent;
     display: block !important;
+  }
+}
+@media (min-width: 1024px) {
+  #header > div #nav-container {
+    font-size: 1.25rem;
   }
 }
 
@@ -547,10 +552,16 @@ footer > div {
 footer > div h1 {
   grid-area: h1;
   color: #fff;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   footer > div h1 {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div h1 {
+    font-size: 3.125rem;
   }
 }
 footer > div #socials {
@@ -1256,10 +1267,12 @@ footer > div #subscribe form button:hover {
 }
 #cuisine > div > div ul #streetfood aside button {
   margin-top: 144px;
+  margin-right: 3px;
 }
 @media (min-width: 768px) {
   #cuisine > div > div ul #streetfood aside button {
     margin-top: 10px;
+    margin-right: 0;
   }
 }
 #cuisine > div > div ul #coffee {
@@ -1294,10 +1307,12 @@ footer > div #subscribe form button:hover {
 }
 #cuisine > div > div ul #coffee aside button {
   margin-top: 144px;
+  margin-right: 3px;
 }
 @media (min-width: 768px) {
   #cuisine > div > div ul #coffee aside button {
     margin-top: 35px;
+    margin-right: 0;
   }
 }
 #cuisine > div #cuisine-intro {
