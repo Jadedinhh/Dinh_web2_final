@@ -415,13 +415,105 @@ a {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+  text-align: right;
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #86A873;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #fff;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #FFBF00;
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
 #header {
   color: #fff;
-  padding: 15px 0;
 }
-#header ul li {
+#header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 20% auto;
+}
+@media (min-width: 1024px) {
+  #header > div {
+    grid-template-areas: "logo nav";
+    grid-template-columns: 7% auto auto;
+  }
+}
+#header > div #logo-container {
+  grid-area: logo;
+  padding: 15px;
+}
+#header > div #logo-container a:link,
+#header > div #logo-container a:visited {
+  transition: 0.25s;
+}
+#header > div #logo-container a:link:hover,
+#header > div #logo-container a:visited:hover {
+  color: #FFBF00;
+}
+#header > div #burger-container {
+  align-items: center;
   display: flex;
-  justify-content: space-around;
+  grid-area: burger;
+  padding: 10px;
+  padding-left: 69vw;
+}
+@media (min-width: 768px) {
+  #header > div #burger-container {
+    padding-left: 74.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  #header > div #burger-container {
+    display: none !important;
+  }
+}
+#header > div #burger-container i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: auto;
+}
+#header > div #burger-container i:hover {
+  color: #fff;
+}
+#header > div #nav-container {
+  background-color: #1E555C;
+  color: #EAE2B7;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #header > div #nav-container {
+    background-color: transparent;
+    display: block !important;
+  }
 }
 
 footer {
