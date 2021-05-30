@@ -453,6 +453,11 @@ a {
 #header {
   background-color: #003049;
 }
+@media (min-width: 768px) {
+  #header {
+    background-color: transparent;
+  }
+}
 #header > div {
   display: grid;
   grid-template-areas: "logo burger" "nav nav";
@@ -460,8 +465,7 @@ a {
 }
 @media (min-width: 768px) {
   #header > div {
-    grid-template-areas: " logo nav";
-    grid-template-columns: 20% auto;
+    grid-template-columns: 0;
   }
 }
 #header > div #logo-container {
@@ -480,6 +484,18 @@ a {
 #header > div #logo-container a:link:hover,
 #header > div #logo-container a:visited:hover {
   color: #FFBF00;
+}
+@media (min-width: 768px) {
+  #header > div #logo-container a:link,
+#header > div #logo-container a:visited {
+    justify-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  #header > div #logo-container a:link,
+#header > div #logo-container a:visited {
+    font-size: 2.25rem;
+  }
 }
 #header > div #burger-container {
   align-items: center;
@@ -507,12 +523,13 @@ a {
   display: none;
   grid-area: nav;
   padding: 20px 0 10px;
-  text-align: right;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #header > div #nav-container {
     background-color: transparent;
     display: block !important;
+    padding: 0;
   }
 }
 @media (min-width: 1024px) {
