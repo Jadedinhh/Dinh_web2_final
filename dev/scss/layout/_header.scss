@@ -1,13 +1,70 @@
 #header{
     color: $white;
-    padding: 15px 0;
-    ul{
-      
-        li{
-           display: flex;
-           justify-content: space-around ;
-        
+    // padding: 15px 0;
 
+    >div {
+        display: grid;
+        grid-template-areas: "logo burger"
+                             "nav nav";
+        grid-template-columns: 20% auto;
+
+        @include lg {
+            grid-template-areas: "logo nav";
+            grid-template-columns: 7% auto auto;
+        }
+        
+        #logo-container {
+            grid-area: logo;
+            padding: 15px;
+
+            a:link,
+            a:visited {
+                transition: 0.25s;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+            padding-left: 69vw;
+
+            @include md{
+                padding-left: 74.5vw;
+            }
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: rem-calc(40);
+                margin-left: auto;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        #nav-container {
+            background-color: $ocean;
+            color: $egg;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+            text-align: right;
+
+            @include lg {
+                background-color: transparent;
+                display: block !important;
+            }
         }
     }
 }
