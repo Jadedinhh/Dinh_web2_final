@@ -472,7 +472,7 @@ a {
   grid-area: logo;
   padding: 15px;
   display: flex;
-  padding-left: 50%;
+  padding-left: 43%;
 }
 #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
@@ -1096,7 +1096,6 @@ footer > div #subscribe form button:hover {
 }
 #attractions > div > div ul #a6 {
   grid-area: a6;
-  padding-bottom: 50px;
 }
 #attractions > div > div ul #a6 h3 {
   color: #1E555C;
@@ -1529,12 +1528,33 @@ footer > div #subscribe form button:hover {
     text-align: left;
   }
 }
-#tips > div section {
-  display: flex;
-  justify-content: center;
+#tips > div #tip-pic {
+  background-image: url("../img/tips/ham-ca-map.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-template-rows: 300px;
+  display: grid;
+}
+#tips > div #tip-pic img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #tips > div #tip-pic {
+    display: flex;
+    justify-content: center;
+    background-image: none;
+  }
+  #tips > div #tip-pic img {
+    display: list-item;
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) {
-  #tips > div section img {
+  #tips > div #tip-pic {
+    display: flex;
+    justify-content: center;
+  }
+  #tips > div #tip-pic img {
     width: 90%;
   }
 }
