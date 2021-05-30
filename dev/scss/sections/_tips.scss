@@ -38,11 +38,32 @@
             }
         }
 
-        section {
-            display: flex;
+        #tip-pic{
+            background-image: url("../img/tips/ham-ca-map.jpg");
+            background-position: center;
+            background-size: cover;
+            grid-template-rows: 300px;
+            display: grid;
+            img{
+                display: none;
+            }
+
+            @include md{
+                display: flex;
             justify-content: center;
+                background-image: none;
+                img{
+                    display: list-item;
+                    width: 100%;
+                }
+
+
+            }
+
 
             @include xl {
+                display: flex;
+            justify-content: center;
                 img {
                     width: 90%;
                 }
