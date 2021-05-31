@@ -3,8 +3,8 @@
 
     @include md {
         
-        background-image: url("../img/attraction/cot-dien.svg");
-        background-position: right;
+        background-image: url("../img/attraction/cot-dien.png");
+        background-position:  -150px center ;
         background-size: cover;
         display: grid;
         grid-template-areas: ". attractions .";
@@ -15,6 +15,7 @@
 
     @include lg {
         grid-template-columns: auto 1000px auto;
+        background-position: center;
     }
 
     @include xl {

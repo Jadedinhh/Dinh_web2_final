@@ -895,8 +895,8 @@ footer > div #subscribe form button:hover {
 }
 @media (min-width: 768px) {
   #attractions {
-    background-image: url("../img/attraction/cot-dien.svg");
-    background-position: right;
+    background-image: url("../img/attraction/cot-dien.png");
+    background-position: -150px center;
     background-size: cover;
     display: grid;
     grid-template-areas: ". attractions .";
@@ -907,6 +907,7 @@ footer > div #subscribe form button:hover {
 @media (min-width: 1024px) {
   #attractions {
     grid-template-columns: auto 1000px auto;
+    background-position: center;
   }
 }
 @media (min-width: 1200px) {

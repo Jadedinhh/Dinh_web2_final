@@ -34,19 +34,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/attraction\/cot-dien.png" : {
-      "ft" : 32768,
-      "iS" : 282798,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/attraction\/cot-dien.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/attraction\/cot-dien.svg" : {
       "ft" : 2097152,
       "miP" : 0,
