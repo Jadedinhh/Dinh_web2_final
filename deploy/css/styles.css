@@ -415,41 +415,40 @@ a {
 /* =============
     Navigation
 ============= */
-#nav-container ul {
+#nav-container > div ul {
   height: 100%;
 }
 @media (min-width: 768px) {
-  #nav-container ul {
+  #nav-container > div ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
-#nav-container ul li {
+#nav-container > div ul li {
   margin-bottom: 20px;
   text-align: right;
 }
-#nav-container ul li a:link,
-#nav-container ul li a:visited {
+#nav-container > div ul li a:link,
+#nav-container > div ul li a:visited {
   color: #86A873;
   padding: 0 20px;
   text-decoration: none;
   transition: 0.25s;
 }
 @media (min-width: 768px) {
-  #nav-container ul li a:link,
-#nav-container ul li a:visited {
+  #nav-container > div ul li a:link,
+#nav-container > div ul li a:visited {
     color: #fff;
   }
 }
-#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
-#nav-container ul li a:visited:hover,
-#nav-container ul li a:visited:active {
+#nav-container > div ul li a:link:hover, #nav-container > div ul li a:link:active,
+#nav-container > div ul li a:visited:hover,
+#nav-container > div ul li a:visited:active {
   color: #FFBF00;
 }
-#nav-container ul li:last-child {
+#nav-container > div ul li:last-child {
   border: none;
 }
-
 #header {
   background-color: #003049;
 }
@@ -469,27 +468,27 @@ a {
   }
 }
 #header > div #logo-container {
+  display: flex;
   grid-area: logo;
   padding: 15px;
-  display: flex;
   padding-left: 43%;
+}
+@media (min-width: 768px) {
+  #header > div #logo-container {
+    padding-left: 0;
+    display: none;
+  }
 }
 #header > div #logo-container a:link,
 #header > div #logo-container a:visited {
-  transition: 0.25s;
   color: #fff;
   font-size: 1.875rem;
   font-weight: 600;
+  transition: 0.25s;
 }
 #header > div #logo-container a:link:hover,
 #header > div #logo-container a:visited:hover {
   color: #FFBF00;
-}
-@media (min-width: 768px) {
-  #header > div #logo-container a:link,
-#header > div #logo-container a:visited {
-    justify-items: center;
-  }
 }
 @media (min-width: 1024px) {
   #header > div #logo-container a:link,
@@ -499,10 +498,10 @@ a {
 }
 #header > div #burger-container {
   align-items: center;
+  color: #fff;
   display: flex;
   grid-area: burger;
   padding: 10px;
-  color: #fff;
 }
 @media (min-width: 768px) {
   #header > div #burger-container {
@@ -529,12 +528,47 @@ a {
   #header > div #nav-container {
     background-color: transparent;
     display: block !important;
-    padding: 0;
   }
 }
-@media (min-width: 1024px) {
-  #header > div #nav-container {
-    font-size: 1.25rem;
+@media (min-width: 768px) {
+  #header > div #nav-container > div {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  #header > div #nav-container > div #left {
+    grid-area: left;
+  }
+}
+#header > div #nav-container > div #title {
+  display: none;
+}
+@media (min-width: 768px) {
+  #header > div #nav-container > div #title {
+    grid-area: title;
+    display: list-item;
+  }
+  #header > div #nav-container > div #title a:link,
+#header > div #nav-container > div #title a:visited {
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    transition: 0.25s;
+  }
+  #header > div #nav-container > div #title a:link:hover,
+#header > div #nav-container > div #title a:visited:hover {
+    color: #FFBF00;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #header > div #nav-container > div #title a:link,
+#header > div #nav-container > div #title a:visited {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #header > div #nav-container > div #right {
+    grid-area: right;
   }
 }
 

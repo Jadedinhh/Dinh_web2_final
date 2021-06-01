@@ -2,42 +2,51 @@
     Navigation
 ============= */
 #nav-container {
-    ul {
-        height: 100%;
+    >div {
+        ul {
+            height: 100%;
 
-        @include md {
-            display: flex;
-            justify-content: flex-end;
-        }
+            @include md {
+                display: flex;
+                justify-content: center;
+            }
 
-        li {
-            margin-bottom: 20px;
-            // border: 1px solid red;
-            text-align: right;
+            li {
+                margin-bottom: 20px;
+                text-align: right;
 
 
-            a:link,
-            a:visited {
+                a:link,
+                a:visited {
 
-                color: $asparagus ;
-                padding: 0 20px;
-                text-decoration: none;
-                transition: 0.25s;
-                
-                
-                @include md {
-                    color: $white;
+                    color: $asparagus;
+                    padding: 0 20px;
+                    text-decoration: none;
+                    transition: 0.25s;
+
+
+                    @include md {
+                        color: $white;
+
+                    }
+
+                    &:hover,
+                    &:active {
+                        color: $yellow;
+                    }
                 }
+            }
 
-                &:hover,
-                &:active {
-                    color: $yellow;
-                }
+            li:last-child {
+                border: none;
             }
         }
 
-        li:last-child {
-            border: none;
+        #left {}
+
+        #right {
+            // margin-top: -50px;
         }
     }
+
 }
