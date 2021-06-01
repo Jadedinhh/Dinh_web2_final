@@ -1,9 +1,15 @@
 #header {
     // padding: 15px 0;
     background-color: $prussian;
+    // left: 0;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+   
 
     @include md {
         background-color: transparent;
+       
     }
 
     >div {
@@ -13,9 +19,6 @@
         grid-template-columns: auto 20%;
 
         @include md {
-            //     display: flex;
-            // grid-template-areas: "logo nav";
-            // grid-template-columns: 20% auto;
           grid-template-columns: 0;
         }
 
@@ -83,18 +86,13 @@
               
             }
 
-            @include lg {
-                // font-size: rem-calc(20);
-            }
-
             >div {
 
                 @include md{
-                //     display: grid;
-                //  grid-template-columns: repeat(3,1fr);
-                // grid-template-areas: "left title right";
                  display: flex;
-                 
+                 justify-content: space-around;
+                
+                // justify-content: center;
                 }
                 
 
@@ -102,6 +100,7 @@
                 #left {
                    @include md{
                        grid-area: left;
+                    
                    }
                 }
 
@@ -110,24 +109,17 @@
 
                     @include md{
                         grid-area: title;
-                        display: list-item;
+                        display: flex;
+                        margin: -6px -5px;
+                    
+                }
 
-                        a:link,
-                        a:visited {
-                            color: $white;
-                            font-size: rem-calc(30);
-                            font-weight: 600;
-                            transition: 0.25s;
-            
-                            &:hover {
-                                color: $yellow;
-                            }
+                @include lg{
+                    margin: -6px -20%;
+                }
 
-                            @include lg {
-                                font-size: rem-calc(36);
-                            }
-            
-                    }
+                @include xl{
+                    margin: -6px -30%;
                 }
             }
 

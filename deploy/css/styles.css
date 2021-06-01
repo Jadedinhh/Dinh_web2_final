@@ -439,6 +439,19 @@ a {
   #nav-container > div ul li a:link,
 #nav-container > div ul li a:visited {
     color: #fff;
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #nav-container > div ul li a:link,
+#nav-container > div ul li a:visited {
+    font-size: 1.3125rem;
+  }
+}
+@media (min-width: 1200px) {
+  #nav-container > div ul li a:link,
+#nav-container > div ul li a:visited {
+    font-size: 1.5rem;
   }
 }
 #nav-container > div ul li a:link:hover, #nav-container > div ul li a:link:active,
@@ -448,6 +461,23 @@ a {
 }
 #nav-container > div ul li:last-child {
   border: none;
+}
+#nav-container > div #title a:link,
+#nav-container > div #title a:visited {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  transition: 0.25s;
+}
+#nav-container > div #title a:link:hover,
+#nav-container > div #title a:visited:hover {
+  color: #FFBF00;
+}
+@media (min-width: 1024px) {
+  #nav-container > div #title a:link,
+#nav-container > div #title a:visited {
+    font-size: 2.25rem;
+  }
 }
 #header {
   background-color: #003049;
@@ -533,6 +563,7 @@ a {
 @media (min-width: 768px) {
   #header > div #nav-container > div {
     display: flex;
+    justify-content: space-around;
   }
 }
 @media (min-width: 768px) {
@@ -546,24 +577,18 @@ a {
 @media (min-width: 768px) {
   #header > div #nav-container > div #title {
     grid-area: title;
-    display: list-item;
-  }
-  #header > div #nav-container > div #title a:link,
-#header > div #nav-container > div #title a:visited {
-    color: #fff;
-    font-size: 1.875rem;
-    font-weight: 600;
-    transition: 0.25s;
-  }
-  #header > div #nav-container > div #title a:link:hover,
-#header > div #nav-container > div #title a:visited:hover {
-    color: #FFBF00;
+    display: flex;
+    margin: -6px -5px;
   }
 }
-@media (min-width: 768px) and (min-width: 1024px) {
-  #header > div #nav-container > div #title a:link,
-#header > div #nav-container > div #title a:visited {
-    font-size: 2.25rem;
+@media (min-width: 1024px) {
+  #header > div #nav-container > div #title {
+    margin: -6px -20%;
+  }
+}
+@media (min-width: 1200px) {
+  #header > div #nav-container > div #title {
+    margin: -6px -30%;
   }
 }
 @media (min-width: 768px) {
