@@ -14,6 +14,7 @@
             li {
                 margin-bottom: 20px;
                 text-align: right;
+                // padding: 0 5px;
 
 
                 a:link,
@@ -23,11 +24,12 @@
                     padding: 0 20px;
                     text-decoration: none;
                     transition: 0.25s;
+                    font-weight: 500;
 
 
                     @include md {
                         color: $white;
-                        font-size: rem-calc(18);
+                        font-size: rem-calc(17);
 
                     }
 
