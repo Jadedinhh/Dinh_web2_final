@@ -57,6 +57,7 @@
                 background-image: none;
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
 
                 img {
                     display: list-item;
@@ -137,28 +138,19 @@
                             @include md {
                                 display: flex;
                                 font-family: 'Sora', sans-serif;
-                                font-size: rem-calc(14);
                                 font-weight: 100;
-
-                                a:link,
-                                a:visited {
-                                    color: $rock;
-                                    font-weight: 100;
-                                    margin-left: 5px;
-                                    transition: 0.25s;
-
-                                    &:hover {
-                                        color: $ocean;
-                                    }
-                                }
+                               
 
                                 i {
                                     color: $smoked-blue;
+                                    font-size: rem-calc(18);
                                 }
 
                                 p {
+                                    justify-content: center;
                                     font-weight: 100;
                                     margin-left: 5px;
+                                
                                 }
                             }
                         }
@@ -168,6 +160,37 @@
 
             #where {
                 grid-area: where;
+                section{
+                    >div{
+                        >div{
+                            display: none;
+
+                            @include md{
+                                display: flex;
+                                font-family: 'Sora', sans-serif;
+                                font-weight: 100;
+
+                                a:link,
+                                a:visited {
+                                    color: $rock;
+                                    font-weight: 100;
+                                    margin-left: 5px;
+                                    transition: 0.25s;
+                                 
+                                   
+                                    &:hover {
+                                        color: $ocean;
+                                    }
+                                }
+
+                                i {
+                                    color: $smoked-blue;
+                                    font-size: rem-calc(17);
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             #how {

@@ -1610,6 +1610,7 @@ footer > div #subscribe form button:hover {
     background-image: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
   #tips > div #tip-pic img {
     display: list-item;
@@ -1691,30 +1692,45 @@ footer > div #subscribe form button:hover {
   #tips > div ul li section > div .tipz {
     display: flex;
     font-family: "Sora", sans-serif;
-    font-size: 0.875rem;
     font-weight: 100;
-  }
-  #tips > div ul li section > div .tipz a:link,
-#tips > div ul li section > div .tipz a:visited {
-    color: #414B3F;
-    font-weight: 100;
-    margin-left: 5px;
-    transition: 0.25s;
-  }
-  #tips > div ul li section > div .tipz a:link:hover,
-#tips > div ul li section > div .tipz a:visited:hover {
-    color: #1E555C;
   }
   #tips > div ul li section > div .tipz i {
     color: #C7D1D6;
+    font-size: 1.125rem;
   }
   #tips > div ul li section > div .tipz p {
+    justify-content: center;
     font-weight: 100;
     margin-left: 5px;
   }
 }
 #tips > div ul #where {
   grid-area: where;
+}
+#tips > div ul #where section > div > div {
+  display: none;
+}
+@media (min-width: 768px) {
+  #tips > div ul #where section > div > div {
+    display: flex;
+    font-family: "Sora", sans-serif;
+    font-weight: 100;
+  }
+  #tips > div ul #where section > div > div a:link,
+#tips > div ul #where section > div > div a:visited {
+    color: #414B3F;
+    font-weight: 100;
+    margin-left: 5px;
+    transition: 0.25s;
+  }
+  #tips > div ul #where section > div > div a:link:hover,
+#tips > div ul #where section > div > div a:visited:hover {
+    color: #1E555C;
+  }
+  #tips > div ul #where section > div > div i {
+    color: #C7D1D6;
+    font-size: 1.0625rem;
+  }
 }
 #tips > div ul #how {
   grid-area: how;
