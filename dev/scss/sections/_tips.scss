@@ -78,8 +78,8 @@
             @include md {
                 display: grid;
                 gap: 50px;
-                grid-template-areas: "where how"
-                    "when restriction";
+                grid-template-areas: "when how"
+                                     "where restriction";
                 grid-template-columns: repeat(2, 1fr);
             }
 

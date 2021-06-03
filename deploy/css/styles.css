@@ -481,12 +481,11 @@ a {
   }
 }
 #header {
-  background-color: #003049;
-}
-@media (min-width: 768px) {
-  #header {
-    background-color: transparent;
-  }
+  background-color: rgba(0, 48, 73, 0.3);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 #header > div {
   display: grid;
@@ -1629,7 +1628,7 @@ footer > div #subscribe form button:hover {
   #tips > div ul {
     display: grid;
     gap: 50px;
-    grid-template-areas: "where how" "when restriction";
+    grid-template-areas: "when how" "where restriction";
     grid-template-columns: repeat(2, 1fr);
   }
 }

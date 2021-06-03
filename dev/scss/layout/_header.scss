@@ -1,16 +1,16 @@
 #header {
     // padding: 15px 0;
-    background-color: $prussian;
-    // left: 0;
-    // position: fixed;
-    // top: 0;
-    // width: 100%;
+    background-color: $teal;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
    
 
-    @include md {
-        background-color: transparent;
+    // @include md {
+    //     background-color: transparent;
        
-    }
+    // }
 
     >div {
         display: grid;
