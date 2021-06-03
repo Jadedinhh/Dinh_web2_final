@@ -1594,17 +1594,22 @@ footer > div #subscribe form button:hover {
   background-image: url("../img/tips/ham-ca-map.jpg");
   background-position: center;
   background-size: cover;
-  grid-template-rows: 300px;
   display: grid;
+  grid-template-rows: 300px;
 }
 #tips > div #tip-pic img {
   display: none;
 }
 @media (min-width: 768px) {
   #tips > div #tip-pic {
+    grid-template-rows: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #tips > div #tip-pic {
+    background-image: none;
     display: flex;
     justify-content: center;
-    background-image: none;
   }
   #tips > div #tip-pic img {
     display: list-item;
@@ -1612,10 +1617,6 @@ footer > div #subscribe form button:hover {
   }
 }
 @media (min-width: 1200px) {
-  #tips > div #tip-pic {
-    display: flex;
-    justify-content: center;
-  }
   #tips > div #tip-pic img {
     width: 90%;
   }
