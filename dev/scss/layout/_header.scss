@@ -6,12 +6,6 @@
     top: 0;
     width: 100%;
    
-
-    // @include md {
-    //     background-color: transparent;
-       
-    // }
-
     >div {
         display: grid;
         grid-template-areas: "logo burger"
@@ -93,8 +87,6 @@
                 @include md{
                  display: flex;
                  justify-content: space-around;
-                
-                // justify-content: center;
                 }
                 
 
