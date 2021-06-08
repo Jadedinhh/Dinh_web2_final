@@ -5,7 +5,7 @@
         display: grid;
         grid-template-areas: ". tips .";
         grid-template-columns: auto 600px auto;
-        margin-bottom: 78px;
+        margin-bottom: 15px;
         margin-top: -250px;
     }
 
@@ -79,7 +79,7 @@
                 display: grid;
                 gap: 50px;
                 grid-template-areas: "when how"
-                                     "where restriction";
+                    "where restriction";
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -139,7 +139,6 @@
                                 display: flex;
                                 font-family: 'Sora', sans-serif;
                                 font-weight: 100;
-                               
 
                                 i {
                                     color: $smoked-blue;
@@ -147,10 +146,9 @@
                                 }
 
                                 p {
-                                    justify-content: center;
                                     font-weight: 100;
+                                    justify-content: center;
                                     margin-left: 5px;
-                                
                                 }
                             }
                         }
@@ -160,12 +158,13 @@
 
             #where {
                 grid-area: where;
-                section{
-                    >div{
-                        >div{
+
+                section {
+                    >div {
+                        >div {
                             display: none;
 
-                            @include md{
+                            @include md {
                                 display: flex;
                                 font-family: 'Sora', sans-serif;
                                 font-weight: 100;
@@ -176,8 +175,7 @@
                                     font-weight: 100;
                                     margin-left: 5px;
                                     transition: 0.25s;
-                                 
-                                   
+
                                     &:hover {
                                         color: $ocean;
                                     }

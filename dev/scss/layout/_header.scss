@@ -1,29 +1,27 @@
 #header {
-    // padding: 15px 0;
     background-color: $teal;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-   
+
     >div {
         display: grid;
         grid-template-areas: "logo burger"
             "nav nav";
-        grid-template-columns: auto 20%;
+        grid-template-columns: auto 30%;
 
         @include md {
-          grid-template-columns: 0;
+            grid-template-columns: 0;
         }
 
         #logo-container {
             display: flex;
             grid-area: logo;
+            justify-content: flex-end;
             padding: 15px;
-            padding-left: 43%;
 
             @include md {
-                padding-left: 0;
                 display: none;
             }
 
@@ -45,7 +43,7 @@
         }
 
         #burger-container {
-            align-items: center;
+            align-items: flex-end;
             color: $white;
             display: flex;
             grid-area: burger;
@@ -69,7 +67,6 @@
         #nav-container {
             background-color: $egg;
             color: $ocean;
-            display: none;
             grid-area: nav;
             padding: 20px 0 10px;
             text-align: center;
@@ -77,49 +74,37 @@
             @include md {
                 background-color: transparent;
                 display: block !important;
-                // padding-left: 3px;
-                padding: 20px -10px;
-              
             }
 
             >div {
-
-                @include md{
-                 display: flex;
-                 justify-content: space-around;
+                @include md {
+                    display: grid;
+                    grid-template-areas: "left title right";
+                    grid-template-columns: repeat(3, 1fr);
                 }
-                
-
 
                 #left {
-                   @include md{
-                       grid-area: left;
-                    
-                   }
+                    @include md {
+                        grid-area: left;
+                        margin-right: -40%;
+                    }
                 }
 
-                #title{
+                #title {
                     display: none;
 
-                    @include md{
-                        grid-area: title;
+                    @include md {
                         display: flex;
-                        margin: -6px -5px;
-                       
+                        grid-area: title;
+                        justify-content: center;
+                        margin: -6px -10px;
+                    }
                 }
-
-                @include lg{
-                    margin: -6px -20%;
-                }
-
-                @include xl{
-                    margin: -6px -30%;
-                }
-            }
 
                 #right {
-                    @include md{
+                    @include md {
                         grid-area: right;
+                        margin-left: -40%;
                     }
                 }
             }

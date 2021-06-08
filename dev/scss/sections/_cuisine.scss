@@ -9,8 +9,6 @@
         grid-area: cuisine;
 
         >div {
-
-           
             @include md {
                 display: grid;
                 grid-template-areas: ". dishes .";
@@ -24,9 +22,8 @@
             ul {
                 display: grid;
                 grid-template-areas: "streetfood coffee";
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 170px;
-                
 
                 @include md {
                     gap: 12px;
@@ -34,8 +31,6 @@
                 }
 
                 li {
-
-                    
                     section {
                         display: grid;
                         grid-template-areas: ". cuisine-content .";
@@ -72,15 +67,12 @@
                             }
                         }
                     }
-                   
-                
                 }
 
                 #streetfood {
-                      background-image: url("../img/cuisine/cha-ca.jpg");
-                            background-position: right;
-                            background-size: cover;
-                      
+                    background-image: url("../img/cuisine/cha-ca.jpg");
+                    background-position: right;
+                    background-size: cover;
 
                     img {
                         display: none;
@@ -104,28 +96,26 @@
                     }
 
                     aside {
-                        display: flex;
                         align-items: flex-end;
+                        display: flex;
                         justify-content: flex-end;
-                        button {
-                            margin-top: 144px;
-                            margin-right: 3px;
 
-                            @include md{
-                                margin-top: 10px;
+                        button {
+                            margin-right: 3px;
+                            margin-top: 144px;
+
+                            @include md {
                                 margin-right: 0;
+                                margin-top: 10px;
                             }
                         }
                     }
                 }
 
                 #coffee {
-                    
                     background-image: url("../img/cuisine/note-coffee.jpg");
-                            background-position: center;
-                            background-size: cover;
-                            
-                        
+                    background-position: center;
+                    background-size: cover;
 
                     img {
                         display: none;
@@ -149,16 +139,17 @@
                     }
 
                     aside {
-                        display: flex;
                         align-items: flex-end;
+                        display: flex;
                         justify-content: flex-end;
-                        button {
-                            margin-top: 144px;
-                            margin-right: 3px;
 
-                            @include md{
-                                margin-top: 35px;
+                        button {
+                            margin-right: 3px;
+                            margin-top: 144px;
+
+                            @include md {
                                 margin-right: 0;
+                                margin-top: 35px;
                             }
                         }
                     }
@@ -183,16 +174,14 @@
                 height: 500px;
             }
 
-            @include xl{
-               display: grid;
-               grid-template-columns: auto 1000px auto;
-               grid-template-areas: ". intro-content .";
-               
-              
+            @include xl {
+                display: grid;
+                grid-template-areas: ". intro-content .";
+                grid-template-columns: auto 1000px auto;
             }
 
             >div {
-                @include xl{
+                @include xl {
                     grid-area: intro-content;
                 }
 
@@ -208,7 +197,7 @@
                         text-align: left;
                     }
 
-                    @include xl{
+                    @include xl {
                         padding-left: 0;
                     }
                 }
@@ -225,11 +214,11 @@
                     }
 
                     @include lg {
-                        width: 40%;
                         padding-bottom: 5px;
+                        width: 40%;
                     }
 
-                    @include xl{
+                    @include xl {
                         padding-left: 0;
                     }
                 }

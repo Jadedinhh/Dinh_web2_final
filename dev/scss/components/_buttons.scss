@@ -1,20 +1,17 @@
-/* =============
-    Buttons
-============= */
-.green-button{
-    
+
+.green-button {
     background-color: $asparagus;
-    color: $white;
     border: none;
     border-radius: 3px;
+    color: $white;
+    font-family: 'Sora', sans-serif;
     font-size: rem-calc(16);
     font-weight: 500;
-    font-family: 'Sora', sans-serif;
     padding: 6px;
-    
+
     &:hover {
-		background-color: $yellow;
-		color: $ocean;
+        background-color: $yellow;
+        color: $ocean;
         cursor: pointer;
-	}
+    }
 }
