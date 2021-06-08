@@ -1479,6 +1479,7 @@ footer > div #subscribe form button:hover {
   text-align: right;
 }
 #quote > div h1 {
+  color: #1E555C;
   font-style: italic;
   font-weight: 500;
   line-height: 44px;

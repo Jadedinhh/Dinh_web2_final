@@ -21,10 +21,12 @@
         grid-area: quote;
         text-align: right;
 
-        h1 {
+        h1 { 
+            color: $ocean;
             font-style: italic;
             font-weight: 500;
             line-height: 44px;
+           
 
             @include md {
                 font-size: rem-calc(45);
